@@ -1,0 +1,1 @@
+UPDATE boglog.session as t1 set t1.end_time = CURRENT_TIMESTAMP WHERE t1.end_time IS NULL ORDER BY start_time DESC LIMIT 1; 

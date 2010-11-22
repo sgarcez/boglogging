@@ -1,0 +1,1 @@
+SELECT * FROM boglog.session WHERE end_time IS NULL ORDER BY start_time DESC LIMIT 1

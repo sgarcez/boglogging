@@ -1,0 +1,25 @@
+The time has come. I hope you're sitting down.
+
+You're surely thinking: "Today is the World Toilet Day, this cant be a coincidence". And you're right.
+
+The Dév Centre DAGGERS' Think Tank (aka the badass faction/guys with denim vests) came up with an automagical way of letting us all know if the upstairs toilet is vacant or occupied.
+
+Now pick up you jaw, we wouldn't want it to be permanently dislocated.
+
+You guys downstairs spoiled by your double toilet situation may find this frivolous but up here on the superior floor we go through a daily struggle trying to book a seat in the most exclusive of clubs - the bog.
+
+Here's how it works, you can install a menubar icon in osx that looks like so:
+
+
+Alternatively, or if you're not on a toaster you can access www.boglogging.com which will present you with a kindergarden level color representation the state of the toilet. The page will update itself, you don't need to refresh.
+
+If I may suggest, that website is probably the best single use for a secondary monitor I've ever come across. 
+
+
+
+It's a small and somewhat juvenile project but it will hopefully solve a problem (if minor) and it allowed us to play around with different technologies like physical computing, server-side magic and native applications.
+
+We would like to guarantee that future incursions into URANUS will not carry any privacy concerns, but we're not in a position to do that.
+
+
+This is the first DAGGERS production and it was programmed by Sergio and James. Simone did the designs, kanish supplied the wire and rachid was our SQL consultant.

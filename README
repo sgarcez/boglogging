@@ -1,0 +1,18 @@
+URLS
+
+http://boglogging.com/
+simple html state monitor(updates every 5s)
+
+http://boglogging.com/api/state
+returns 1 or 0 or -1 (engaged, disengaged or error)
+
+http://boglogging.com/api/state/?action=disengage
+OR
+http://boglogging.com/api/state/action/disengage
+returns 1 or -1
+
+
+http://boglogging.com/api/state/?action=engage
+OR
+http://boglogging.com/api/state/action/disengage
+returns 1 or -1

@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /api
+RewriteRule ^state/?$ index.php?action=retrieveState [L]
+RewriteRule ^action/([^/\.]+)/?$ index.php?action=setState&new=$1 [L]
+RewriteRule ^history/([a-z]*)/?$ index.php?action=retrieveHistory&mode=$1 [L]
+#RewriteRule ^history/range/([^/\.]+) index.php?action=retrieveHistory&range=$1 [L]
+
+RewriteRule ^history/([0-9\-\T\:]+),([0-9\-\T\:]*$) index.php?action=retrieveHistory&rangeFrom=$1&rangeTo=$2 [L]
+RewriteRule ^history/([0-9\-]+)/?$ index.php?action=retrieveHistory&rangeFrom=$1 [L]

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>PROJECT URANUS</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="voyager/js/jquery-1.4.4.min.js"></script>
+	</head>
+	<body style="background-color:white">
+
+		<script type="text/javascript">
+		
+		$(document).ready(function() {
+			checkState = function ()
+			{
+				$.get('api/state/', function(data) {
+				  $('.result').html(data);
+				  if(data == '0')
+					{
+						$("html").css("background-color","#6ee45e");
+					}else if(data == '1')
+						{
+						$("html").css("background-color","#fa4c4c");
+						}
+				});
+			}
+			
+		  checkState();
+		  var timer = setInterval( checkState, 3000);
+		
+		});
+		</script>
+
+	</body>
+</html>

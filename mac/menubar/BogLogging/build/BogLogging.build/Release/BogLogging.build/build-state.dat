@@ -1,0 +1,679 @@
+TBogLogging
+v7
+r0
+t311857085.991597
+cCheck dependencies
+cProcessInfoPlistFile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist" BogLogging-Info.plist
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/LoginItem.scpt" LoginItem.scpt
+cCopyStringsFile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCompileXIB "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/MainMenu.xib"
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/icon.icns" Assets/icon.icns
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png" Assets/status-black-engadged.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-error.png" Assets/status-black-error.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-free.png" Assets/status-black-free.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png" Assets/status-colour-engadged.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-error.png" Assets/status-colour-error.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-free.png" Assets/status-colour-free.png
+cProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/PFMoveApplication.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/PFMoveApplication.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/PFMoveApplication.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging" normal x86_64
+cLd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging" normal i386
+cLd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging" normal ppc
+cCreateUniversalBinary "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" normal "x86_64 i386 ppc"
+cGenerateDSYMFile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app.dSYM" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"
+cTouch "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C23AA0400000000000013E6
+t1277405700
+s5094
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h
+c000000004C23A06400000000000009CB
+t1277403236
+s2507
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Security.framework/Security
+c000000004CAA7405000000000006611C
+t1286239237
+s418076
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004CAA74050000000000031758
+t1286239237
+s202584
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.h
+c000000004CE5C13500000000000002D5
+t1290125621
+s725
+i<Cocoa/Cocoa.h>
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m
+c000000004CE657130000000000001E0C
+t1290163987
+s7692
+i"AppDelegate.h"
+i"PFMoveApplication.h"
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/icon.icns
+c000000004CE57D540000000000025407
+t1290108244
+s152583
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-engadged.png
+c000000004CE5BEBE00000000000000F6
+t1290124990
+s246
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-error.png
+c000000004CE5BEC60000000000000145
+t1290124998
+s325
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-free.png
+c000000004CE5BECB0000000000000103
+t1290125003
+s259
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-engadged.png
+c000000004CE5BFA4000000000000018E
+t1290125220
+s398
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-error.png
+c000000004CE5BED60000000000000165
+t1290125014
+s357
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-free.png
+c000000004CE5BFAA00000000000001AD
+t1290125226
+s429
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch
+c000000004CE3C18B00000000000000AE
+t1289994635
+s174
+i<Cocoa/Cocoa.h>
+i"Constants.h"
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.h
+c000000004CE5C0BB00000000000001CD
+t1290125499
+s461
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m
+c000000004CE5C0B80000000000000237
+t1290125496
+s567
+i"Constants.h"
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.h
+c000000004CC1EDE20000000000000108
+t1287777762
+s264
+i<Foundation/Foundation.h>
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m
+c000000004CE656850000000000003F01
+t1290163845
+s16129
+i"PFMoveApplication.h"
+i<Security/Security.h>
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/InfoPlist.strings
+c000000004CE3B106000000000000002D
+t1289990406
+s45
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/MainMenu.xib
+c000000004CE40108000000000002CBD5
+t1290010888
+s183253
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/LoginItem.scpt
+c000000004CE5B0030000000000000788
+t1290121219
+s1928
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o
+t1290164285
+s38808
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging
+t1290164285
+s35864
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging.LinkFileList
+c000000004CE6583A0000000000000245
+t1290164282
+s581
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o
+t1290164285
+s6188
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/PFMoveApplication.o
+t1290164285
+s34576
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o
+t1290164285
+s4892
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o
+t1290164285
+s42880
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging
+t1290164285
+s35216
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging.LinkFileList
+c000000004CE6583A0000000000000241
+t1290164282
+s577
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o
+t1290164285
+s6264
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/PFMoveApplication.o
+t1290164285
+s36500
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o
+t1290164285
+s4924
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o
+t1290164285
+s58660
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging
+t1290164285
+s39472
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging.LinkFileList
+c000000004CE6583A000000000000024D
+t1290164282
+s589
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o
+t1290164285
+s6452
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/PFMoveApplication.o
+t1290164285
+s45644
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o
+t1290164285
+s5096
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app
+t1290164285
+s102
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app.dSYM
+t1290164285
+s102
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist
+t1290164282
+s1024
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging
+t1290164285
+s117136
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/PkgInfo
+t1290164282
+s8
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1290164282
+s92
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/MainMenu.nib
+t1290164282
+s34466
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/LoginItem.scpt
+t1290164282
+s1928
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/icon.icns
+t1290164282
+s152583
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png
+t1290164282
+s246
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-black-error.png
+t1290164282
+s325
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-black-free.png
+t1290164282
+s259
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png
+t1290164282
+s398
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-colour-error.png
+t1290164282
+s357
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-colour-free.png
+t1290164282
+s429
+
+N/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m
+c000000004CE3B10600000000000000F6
+t1289990406
+s246
+i<Cocoa/Cocoa.h>
+
+N/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch.gch
+t2
+s0
+
+NBogLogging-Info.plist
+c000000004CE6518F0000000000000438
+t1290162575
+s1080
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies311857082#311857082#0(0"0(0#1#0"8604476992#0"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s311857085.373039
+e311857085.731120
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m311857085#311857085#0(0"0(0#0#77"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m8607215424#1855"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s311857085.373877
+e311857085.547886
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m311857085#311857085#0(0"0(0#0#83"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m8606994368#1859"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/PFMoveApplication.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s311857085.374960
+e311857085.872884
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/PFMoveApplication.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m311857085#311857085#0(0"0(0#0#91"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m8606700064#1875"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/PFMoveApplication.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s311857085.372351
+e311857085.546385
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m311857085#311857085#0(0"0(0#0#70"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m8607288640#1841"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+s311857085.532807
+e311857085.828533
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m311857085#311857085#0(0"0(0#0#77"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m8606152480#1862"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+s311857085.546515
+e311857085.681685
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m311857085#311857085#0(0"0(0#0#83"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m8605864864#1866"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/PFMoveApplication.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+s311857085.548005
+e311857085.943402
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/PFMoveApplication.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m311857085#311857085#0(0"0(0#0#91"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m8603997024#1882"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/PFMoveApplication.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" normal ppc objective-c com.apple.compilers.gcc.4_2
+s311857085.531060
+e311857085.678078
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m311857085#311857085#0(0"0(0#0#70"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m8606309536#1848"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311857085.370336
+e311857085.751595
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m311857085#311857085#0(0"0(0#0#77"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m8603288832#1861"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/AppDelegate.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311857085.371010
+e311857085.532666
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m311857085#311857085#0(0"0(0#0#83"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m8608070176#1865"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/Constants.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/PFMoveApplication.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311857085.371679
+e311857085.808572
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/PFMoveApplication.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m311857085#311857085#0(0"0(0#0#91"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m8607616832#1881"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Classes/PFMoveApplication.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/PFMoveApplication.o"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311857085.369538
+e311857085.530907
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m311857085#311857085#0(0"0(0#0#70"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m8605918016#1847"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/main.m" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o"0#
+
+CCompileXIB "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/MainMenu.xib"
+s311857082.071061
+e311857082.274993
+r1
+xCompileXIB
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib311857082#311857082#0(0"0(0#0#90"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/MainMenu.xib8606662528#451"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/MainMenu.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s311857082.070547
+e311857082.093749
+r1
+xCopyStringsFile
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings311857082#311857082#0(0"0(0#0#95"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/English.lproj/InfoPlist.strings8606801920#425"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/LoginItem.scpt" LoginItem.scpt
+s311857082.070050
+e311857082.077145
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/LoginItem.scpt
+xLoginItem.scpt
+lSLF07#2@19"Copy LoginItem.scpt311857082#311857082#0(0"0(0#0#78"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/LoginItem.scpt8607017888#438"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/LoginItem.scpt" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/icon.icns" Assets/icon.icns
+s311857082.071519
+e311857082.077310
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/icon.icns
+xAssets/icon.icns
+lSLF07#2@21"Copy Assets/icon.icns311857082#311857082#0(0"0(0#0#80"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/icon.icns8604067968#440"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/icon.icns" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png" Assets/status-black-engadged.png
+s311857082.072136
+e311857082.077715
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png
+xAssets/status-black-engadged.png
+lSLF07#2@37"Copy Assets/status-black-engadged.png311857082#311857082#0(0"0(0#0#96"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-engadged.png8602610432#456"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-engadged.png" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-error.png" Assets/status-black-error.png
+s311857082.072760
+e311857082.079164
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-black-error.png
+xAssets/status-black-error.png
+lSLF07#2@34"Copy Assets/status-black-error.png311857082#311857082#0(0"0(0#0#93"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-error.png8603457632#453"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-error.png" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-free.png" Assets/status-black-free.png
+s311857082.073425
+e311857082.079443
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-black-free.png
+xAssets/status-black-free.png
+lSLF07#2@33"Copy Assets/status-black-free.png311857082#311857082#0(0"0(0#0#92"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-free.png8604117280#452"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-black-free.png" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png" Assets/status-colour-engadged.png
+s311857082.074561
+e311857082.080267
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png
+xAssets/status-colour-engadged.png
+lSLF07#2@38"Copy Assets/status-colour-engadged.png311857082#311857082#0(0"0(0#0#97"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-engadged.png8602988640#457"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-engadged.png" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-error.png" Assets/status-colour-error.png
+s311857082.075217
+e311857082.083923
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-colour-error.png
+xAssets/status-colour-error.png
+lSLF07#2@35"Copy Assets/status-colour-error.png311857082#311857082#0(0"0(0#0#94"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-error.png8592098848#454"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-error.png" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-free.png" Assets/status-colour-free.png
+s311857082.075840
+e311857082.084103
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-colour-free.png
+xAssets/status-colour-free.png
+lSLF07#2@34"Copy Assets/status-colour-free.png311857082#311857082#0(0"0(0#0#93"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-free.png8607200256#453"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/Assets/status-colour-free.png" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCreateUniversalBinary "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" normal "x86_64 i386 ppc"
+s311857085.965690
+e311857085.968180
+r1
+xCreateUniversalBinary
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@105"CreateUniversalBinary "build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" normal "x86_64 i386 ppc"311857085#311857085#0(0"0(0#0#79"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/x86_64 i386 ppc8607248960#669"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /usr/bin/lipo -create "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging" -output "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"0#
+
+CGenerateDSYMFile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app.dSYM" "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"
+s311857085.968235
+e311857085.989101
+r1
+xGenerateDSYMFile
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app.dSYM
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging
+lSLF07#2@112"GenerateDSYMFile "build/Release/Bog Logging.app.dSYM" "build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"311857085#311857085#0(0"0(0#0#120"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging8606970624#332"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /Developer/usr/bin/dsymutil "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app.dSYM"0#
+
+CLd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging" normal i386
+s311857085.872952
+e311857085.902706
+r1
+xLd
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging
+xnormal
+xi386
+lSLF07#2@148"Link /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging311857085#311857085#0(0"0(0#0#0"8606070592#773"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" -filelist "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework SystemConfiguration -framework Security -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging"0#
+
+CLd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging" normal ppc
+s311857085.943468
+e311857085.965613
+r1
+xLd
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging
+xnormal
+xppc
+lSLF07#2@147"Link /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging311857085#311857085#0(0"0(0#0#0"8600718752#770"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" -filelist "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework SystemConfiguration -framework Security -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging"0#
+
+CLd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging" normal x86_64
+s311857085.808679
+e311857085.845714
+r1
+xLd
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging
+xnormal
+xx86_64
+lSLF07#2@150"Link /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging311857085#311857085#0(0"0(0#0#0"8606774624#779"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" -filelist "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework SystemConfiguration -framework Security -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging"0#
+
+CProcessInfoPlistFile "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist" BogLogging-Info.plist
+s311857082.067028
+e311857082.069990
+r1
+xProcessInfoPlistFile
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist
+xBogLogging-Info.plist
+lSLF07#2@29"Process BogLogging-Info.plist311857082#311857082#0(0"0(0#0#85"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging-Info.plist8607261600#406"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    builtin-infoPlistUtility BogLogging-Info.plist -genpkginfo "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s311857082.275709
+e311857085.326922
+r1
+xProcessPCH
+x/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch.gch
+xBogLogging_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile BogLogging_Prefix.pch311857082#311857085#0(0"0(0#0#85"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch8607236224#1717"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch" -o /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-aqmwhnvymgznmyeflknzptpxxnuy/BogLogging_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s311857082.275081
+e311857085.369460
+r1
+xProcessPCH
+x/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch.gch
+xBogLogging_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile BogLogging_Prefix.pch311857082#311857085#0(0"0(0#0#85"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch8607398560#1721"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch" -o /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-axfhjcwrcwagcggrfcdfdthnajmq/BogLogging_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s311857082.276281
+e311857085.202265
+r1
+xProcessPCH
+x/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch.gch
+xBogLogging_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile BogLogging_Prefix.pch311857082#311857085#0(0"0(0#0#85"/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch8607113984#1725"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" "-F/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/include" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc" "-I/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources" -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging_Prefix.pch" -o /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-grueacxethkvelcvwsgedtfsscpi/BogLogging_Prefix.pch.gch0#
+
+CTouch "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app"
+s311857085.989192
+e311857085.991573
+r1
+xTouch
+x/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app
+lSLF07#2@99"Touch /Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app311857085#311857085#0(0"0(0#0#0"8606684832#191"    cd "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging"    /usr/bin/touch -c "/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/build/Release/Bog Logging.app"0#
+

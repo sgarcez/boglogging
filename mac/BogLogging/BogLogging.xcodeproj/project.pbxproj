@@ -10,7 +10,6 @@
 		1A4FE5771295B76B00B7C96D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FE5761295B76B00B7C96D /* icon.icns */; };
 		1A525E581293F8DD009E01CE /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A525E571293F8DD009E01CE /* Constants.m */; };
 		1A525E8F1293FCA4009E01CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A525E8E1293FCA4009E01CE /* SystemConfiguration.framework */; };
-		1ABAD4731295E31D00C2D797 /* LoginItem.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD44F1295E19500C2D797 /* LoginItem.scpt */; };
 		1ABAD5171295EA6A00C2D797 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABAD5161295EA6A00C2D797 /* Security.framework */; };
 		1ABAD55F1295EA8700C2D797 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD55E1295EA8700C2D797 /* PFMoveApplication.m */; };
 		1ABAD5B81295F66F00C2D797 /* status-black-engadged.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B21295F66F00C2D797 /* status-black-engadged.png */; };
@@ -19,6 +18,7 @@
 		1ABAD5BB1295F66F00C2D797 /* status-colour-engadged.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B51295F66F00C2D797 /* status-colour-engadged.png */; };
 		1ABAD5BC1295F66F00C2D797 /* status-colour-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B61295F66F00C2D797 /* status-colour-error.png */; };
 		1ABAD5BD1295F66F00C2D797 /* status-colour-free.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B71295F66F00C2D797 /* status-colour-free.png */; };
+		1ACA33BC129C355900C4CAB6 /* LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA33BB129C355900C4CAB6 /* LoginItem.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -34,7 +34,6 @@
 		1A525E561293F8DD009E01CE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
 		1A525E571293F8DD009E01CE /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Classes/Constants.m; sourceTree = "<group>"; };
 		1A525E8E1293FCA4009E01CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		1ABAD44F1295E19500C2D797 /* LoginItem.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = LoginItem.scpt; sourceTree = "<group>"; };
 		1ABAD5161295EA6A00C2D797 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1ABAD55D1295EA8700C2D797 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFMoveApplication.h; path = Classes/PFMoveApplication.h; sourceTree = "<group>"; };
 		1ABAD55E1295EA8700C2D797 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFMoveApplication.m; path = Classes/PFMoveApplication.m; sourceTree = "<group>"; };
@@ -44,6 +43,8 @@
 		1ABAD5B51295F66F00C2D797 /* status-colour-engadged.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-colour-engadged.png"; sourceTree = "<group>"; };
 		1ABAD5B61295F66F00C2D797 /* status-colour-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-colour-error.png"; sourceTree = "<group>"; };
 		1ABAD5B71295F66F00C2D797 /* status-colour-free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-colour-free.png"; sourceTree = "<group>"; };
+		1ACA33BA129C355900C4CAB6 /* LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginItem.h; path = Classes/LoginItem.h; sourceTree = "<group>"; };
+		1ACA33BB129C355900C4CAB6 /* LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginItem.m; path = Classes/LoginItem.m; sourceTree = "<group>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +79,8 @@
 				1A525E571293F8DD009E01CE /* Constants.m */,
 				1ABAD55D1295EA8700C2D797 /* PFMoveApplication.h */,
 				1ABAD55E1295EA8700C2D797 /* PFMoveApplication.m */,
+				1ACA33BA129C355900C4CAB6 /* LoginItem.h */,
+				1ACA33BB129C355900C4CAB6 /* LoginItem.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -149,7 +152,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1ABAD44F1295E19500C2D797 /* LoginItem.scpt */,
 				8D1107310486CEB800E47090 /* BogLogging-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -216,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABAD4731295E31D00C2D797 /* LoginItem.scpt in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				1A4FE5771295B76B00B7C96D /* icon.icns in Resources */,
@@ -240,6 +241,7 @@
 				256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */,
 				1A525E581293F8DD009E01CE /* Constants.m in Sources */,
 				1ABAD55F1295EA8700C2D797 /* PFMoveApplication.m in Sources */,
+				1ACA33BC129C355900C4CAB6 /* LoginItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +309,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Debug;
 		};
@@ -319,8 +321,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Release;
 		};

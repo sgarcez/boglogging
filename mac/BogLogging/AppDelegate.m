@@ -8,19 +8,25 @@
 
 #import "AppDelegate.h"
 #import "PFMoveApplication.h"
+#import "LoginItem.h"
 
 @implementation AppDelegate
 
-@synthesize window;
+@synthesize window, urlConnection;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
 	
 	// Prompt user to move app to Applications folder if it's not already.
 	PFMoveToApplicationsFolderIfNecessary();
 	
-	// Add the app to system login items.
-	[self _runAppleScriptWithCommand:@"AddLoginItem" inScriptNamed:@"LoginItem" withParameterString:[[NSBundle mainBundle] bundlePath]];
+	// Register for system sleep/wake notifications.
+	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
+	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceDidWakeNotification:) name:NSWorkspaceDidWakeNotification object:nil];
 	
+	// Add the app to system login items.
+	if (![LoginItem willStartAtLogin])
+		[LoginItem setStartAtLogin:YES];
+
 	// Retrieve the preference of whether to use coloured icons or black icons.
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourUserDefaults] intValue] == 1)
 		useBlackIcons = YES;
@@ -32,7 +38,8 @@
 	if (useBlackIcons)
 		[menu addItemWithTitle:@"Use Colour Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
 	else
-		[menu addItemWithTitle:@"Use Black Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
+		[menu addItemWithTitle:@"Use Black Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];	
+	[menu addItemWithTitle:@"Settings" action:@selector(openSettings:) keyEquivalent:@""];
 	[menu addItemWithTitle:@"Quit" action:@selector(appQuit:) keyEquivalent:@""];
 	
 	// Setup the status bar item.
@@ -48,11 +55,13 @@
 	
 	// The fetch connection preparation.
 	urlData = [[NSMutableData alloc] init];
-	[NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
+	fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
 
 }
 
 - (void)dealloc {
+	[[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver:self];
+	self.urlConnection = nil;
 	[menu release];
 	[statusItem release];
 	[super dealloc];
@@ -87,14 +96,6 @@
 }
 
 - (void)toggleIconColour:(id)sender {
-	/*
-	if (![NSApp isActive]) {
-		[NSApp activateIgnoringOtherApps:YES];
-	}
-	[window center];
-	[window makeKeyAndOrderFront:self];
-	*/
-	
 	if (useBlackIcons) {
 		useBlackIcons = NO;
 		[self updateMenu];
@@ -109,8 +110,27 @@
 	}
 }
 
+- (void)openSettings:(id)sender {
+	if (![NSApp isActive]) {
+		[NSApp activateIgnoringOtherApps:YES];
+	}
+	[window center];
+	[window makeKeyAndOrderFront:self];
+}
+
 - (void)appQuit:(id)sender {
 	[NSApp terminate:sender];
+}
+
+- (void)workspaceWillSleepNotification:(NSNotification *)notification {
+	NSLog(@"workspaceWillSleepNotification");
+	[fetchTimer invalidate];
+	self.urlConnection = nil;
+	[urlData setLength:0];
+}
+
+- (void)workspaceDidWakeNotification:(NSNotification *)notification {
+	NSLog(@"workspaceDidWakeNotification");
 }
 
 #pragma mark -
@@ -119,8 +139,8 @@
 - (void)startConnection {
 	NSLog(@"fetching");
 	NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:kStateURLString] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:2.0f];
-	urlConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
-	if (!urlConnection)
+	self.urlConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
+	if (!self.urlConnection)
 		[self connectionError:[NSError errorWithDomain:@"No URLConnection available" code:-100 userInfo:nil]];
 }
 
@@ -158,8 +178,7 @@
 }
 
 - (void)killConnection {
-	//[urlConnection cancel];
-	[urlConnection release];
+	self.urlConnection = nil;
 	[urlData setLength:0];
 }
 
@@ -176,45 +195,5 @@
 	else
 		NSLog(@"%@", parseError);
 }
-
-#pragma mark -
-#pragma mark Execute AppleScript
-
-- (void)_runAppleScriptWithCommand:(NSString *)commandName inScriptNamed:(NSString *)scriptName withParameterString:(NSString *)paramString {
-	NSDictionary *errors = nil;
-	NSString *path = [[NSBundle mainBundle] pathForResource:scriptName ofType:@"scpt"];
-	if ([path hasPrefix:@"/Volumes"])
-		return;
-	NSURL *url = [NSURL fileURLWithPath:path];
-	NSAppleScript *appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
-	
-	/* See if there were any errors loading the script */
-	if (!appleScript || errors) {
-		NSLog(@"error creating applescript:%@ errors:%@", appleScript, [errors description]);
-		[appleScript release];
-		return;
-	}
-	
-	NSAppleEventDescriptor *firstParameter = [NSAppleEventDescriptor descriptorWithString:paramString];
-	NSAppleEventDescriptor *parameters = [NSAppleEventDescriptor listDescriptor];
-	[parameters insertDescriptor:firstParameter atIndex:1];
-	
-	ProcessSerialNumber psn = { 0, kCurrentProcess };
-	NSAppleEventDescriptor *target = [NSAppleEventDescriptor descriptorWithDescriptorType:typeProcessSerialNumber bytes:&psn length:sizeof(ProcessSerialNumber)];
-	NSAppleEventDescriptor *methodName = [NSAppleEventDescriptor descriptorWithString:[commandName lowercaseString]];
-	NSAppleEventDescriptor *event = [NSAppleEventDescriptor appleEventWithEventClass:'ascr'
-																			 eventID:'psbr'
-																	targetDescriptor:target
-																			returnID:kAutoGenerateReturnID
-																	   transactionID:kAnyTransactionID];
-	[event setParamDescriptor:methodName forKeyword:'snam'];
-	[event setParamDescriptor:parameters forKeyword:keyDirectObject];
-	if(	![appleScript executeAppleEvent:event error:&errors]) {
-		NSLog(@"error executing applescript: errors:%@", [errors description]);
-	}
-	[appleScript release];
-}
-
-
 
 @end

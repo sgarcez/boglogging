@@ -1,0 +1,1 @@
+mysqldump --opt -Q -h boglog.db.4844803.hostedresource.com --user=boglog --password=Uranus666 boglog | gzip -v9 - > /home/content/03/4844803/html/_db_backups/boglogging/MySQL-`/bin/date +\%a`.sql.gz

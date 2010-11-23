@@ -158,7 +158,7 @@
 }
 
 - (void)killConnection {
-	[urlConnection cancel];
+	//[urlConnection cancel];
 	[urlConnection release];
 	[urlData setLength:0];
 }

@@ -1,13 +1,1 @@
-URLS
-
-http://boglogging.com/
-simple html state monitor(updates every 5s)
-
-http://boglogging.com/api/state
-returns 1 or 0 or -1 (engaged, disengaged or error)
-
-http://boglogging.com/api/action/disengage
-returns 1 or -1
-
-http://boglogging.com/api/action/engage
-returns 1 or -1
+The project formerly known as PROJECT URANUS

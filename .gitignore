@@ -32,5 +32,4 @@
 ehthumbs.db
 Icon?
 Thumbs.db
-
-mac/menubar/BogLogging/build/*
+build/

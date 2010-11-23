@@ -350,7 +350,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A30692E129BF67C003A2C9D</string>
+										<string>1A30694B129C092D003A2C9D</string>
 										<key>history</key>
 										<array>
 											<string>1A525EEF129409A7009E01CE</string>
@@ -364,7 +364,7 @@
 											<string>1A3932B512968E950018AEAE</string>
 											<string>1AA9BE1F12968F9F00F3221E</string>
 											<string>1AA9BE2012968F9F00F3221E</string>
-											<string>1A44FC00129BD4F3009B64A7</string>
+											<string>1A30692E129BF67C003A2C9D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -422,9 +422,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1A30692F129BF67C003A2C9D</string>
+				<string>1A30694C129C092D003A2C9D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1A306930129BF67C003A2C9D</string>
+				<string>1A30694D129C092D003A2C9D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -545,7 +545,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>312211068.65918899</real>
+	<real>312215853.759251</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -563,7 +563,7 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1A525D5F1293E8B9009E01CE</string>
-		<string>/Users/james/Documents/Personal/OS X/BogLogging/work/BogLogging/BogLogging.xcodeproj</string>
+		<string>/Users/james/Documents/Daggers/boglogging/git/mac/menubar/BogLogging/BogLogging.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 108 1280 1310 0 0 2560 1418 </string>
@@ -604,6 +604,8 @@
 							<string>176pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -643,7 +645,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1A525D5F1293E8B9009E01CE</string>
-				<string>1A306931129BF67C003A2C9D</string>
+				<string>1A30694A129C092B003A2C9D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

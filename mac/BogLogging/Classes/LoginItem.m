@@ -12,7 +12,7 @@
 @implementation LoginItem
 
 + (BOOL)willStartAtLogin {
-	NSURL *itemURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+	NSURL *itemURL = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] bundlePath]];
     Boolean foundIt = false;
     LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
     if (loginItems) {
@@ -34,12 +34,14 @@
         }
         CFRelease(loginItems);
     }
+	[itemURL release];
+	
     return (BOOL)foundIt;
 }
 
 + (void)setStartAtLogin:(BOOL)enabled {
-	NSURL *itemURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
-    //OSStatus status;
+	NSURL *itemURL = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+	//OSStatus status;
     LSSharedFileListItemRef existingItem = NULL;
 	
     LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
@@ -64,14 +66,14 @@
         }
 		
         if (enabled && (existingItem == NULL)) {
-            LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst,
-                                          NULL, NULL, (CFURLRef)itemURL, NULL, NULL);
+            LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, NULL, NULL, (CFURLRef)itemURL, NULL, NULL);
 			
         } else if (!enabled && (existingItem != NULL))
             LSSharedFileListItemRemove(loginItems, existingItem);
 		
         CFRelease(loginItems);
-    }       
+    }
+	[itemURL release];
 }
 
 @end

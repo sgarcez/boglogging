@@ -17,6 +17,7 @@
 
 #import "PFMoveApplication.h"
 #import <Security/Security.h>
+#import "LoginItem.h"
 
 // Strings
 // These are macros to be able to use custom i18n tools
@@ -58,10 +59,14 @@ static BOOL CopyBundle(NSString *srcPath, NSString *dstPath);
 
 
 // Main worker function
-void PFMoveToApplicationsFolderIfNecessary()
-{
-	[[NSUserDefaults standardUserDefaults] setBool:NO forKey:AlertSuppressKey];
-
+void PFMoveToApplicationsFolderIfNecessary() {
+	
+	// TEST LINE, use this to disable to 'remember my preference'.
+	//[[NSUserDefaults standardUserDefaults] setBool:NO forKey:AlertSuppressKey];
+	
+	// Firstly check to see if we've jsut relaunched after moving the app to the Application folder, and if so set default launch at login to YES.
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:kApplicationDidMoveUserDefaults])
+		[LoginItem setStartAtLogin:YES];
 	
 	// Skip if user suppressed the alert before
 	if ([[NSUserDefaults standardUserDefaults] boolForKey:AlertSuppressKey]) return;
@@ -72,6 +77,9 @@ void PFMoveToApplicationsFolderIfNecessary()
 	// Skip if the application is already in some Applications folder
 	if (IsInApplicationsFolder(bundlePath)) return;
 
+	// Things may move around, set the default launch at login to NO, and set it back later.
+	[LoginItem setStartAtLogin:NO];
+	
 	// File Manager
 	NSFileManager *fm = [NSFileManager defaultManager];
 	BOOL bundlePathIsWritable = [fm isWritableFileAtPath:bundlePath];
@@ -225,9 +233,15 @@ void PFMoveToApplicationsFolderIfNecessary()
 			[NSTask launchedTaskWithLaunchPath:@"/bin/sh" arguments:[NSArray arrayWithObjects:@"-c", script, nil]];
 		}
 
+		// We've moved the app and are about to relaunch, set user default to YES so we can set the app to launch at login when we launch again.
+		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kApplicationDidMoveUserDefaults];
+
 		[NSApp terminate:nil];
 	}
 	else {
+		// The user has chosen not to move the application, set default launch at login to YES.
+		[LoginItem setStartAtLogin:YES];
+		
 		if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_4) {
 			// Save the alert suppress preference if checked
 #if MAC_OS_X_VERSION_MAX_ALLOWED > MAC_OS_X_VERSION_10_4

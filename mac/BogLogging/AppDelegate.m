@@ -18,17 +18,9 @@
 	
 	// Prompt user to move app to Applications folder if it's not already.
 	PFMoveToApplicationsFolderIfNecessary();
-	
-	// Register for system sleep/wake notifications.
-	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
-	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceDidWakeNotification:) name:NSWorkspaceDidWakeNotification object:nil];
-	
-	// Add the app to system login items.
-	if (![LoginItem willStartAtLogin])
-		[LoginItem setStartAtLogin:YES];
 
 	// Retrieve the preference of whether to use coloured icons or black icons.
-	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourUserDefaults] intValue] == 1)
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:kUseBlackIconsUserDefaults])
 		useBlackIcons = YES;
 
 	// Setup the drop down menu.
@@ -56,7 +48,10 @@
 	// The fetch connection preparation.
 	urlData = [[NSMutableData alloc] init];
 	fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
-
+	
+	// Register for system sleep/wake notifications.
+	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
+	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceDidWakeNotification:) name:NSWorkspaceDidWakeNotification object:nil];
 }
 
 - (void)dealloc {
@@ -99,13 +94,13 @@
 	if (useBlackIcons) {
 		useBlackIcons = NO;
 		[self updateMenu];
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kUseColourUserDefaults];
+		[[NSUserDefaults standardUserDefaults] setBool:NO forKey:kUseBlackIconsUserDefaults];
 		[[menu itemAtIndex:2] setTitle:@"Use Black Icon"];
 	}
 	else {
 		useBlackIcons = YES;
 		[self updateMenu];
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourUserDefaults];
+		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kUseBlackIconsUserDefaults];
 		[[menu itemAtIndex:2] setTitle:@"Use Colour Icon"];
 	}
 }

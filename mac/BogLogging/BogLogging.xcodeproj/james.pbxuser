@@ -101,9 +101,9 @@
 	};
 	1ABAD55E1295EA8700C2D797 /* PFMoveApplication.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 5915}}";
-			sepNavSelRange = "{3169, 0}";
-			sepNavVisRange = "{3204, 491}";
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 5798}}";
+			sepNavSelRange = "{3554, 0}";
+			sepNavVisRange = "{1524, 3887}";
 		};
 	};
 	1ABAD5C71295F6C000C2D797 /* PBXBookmark */ = {
@@ -149,7 +149,7 @@
 		);
 		name = "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	1AC9A564129D46D200F95767 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -161,16 +161,6 @@
 		vrLen = 790;
 		vrLoc = 0;
 	};
-	1AC9A567129D471300F95767 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */;
-		name = "AppDelegate.m: 21";
-		rLen = 0;
-		rLoc = 473;
-		rType = 0;
-		vrLen = 3460;
-		vrLoc = 0;
-	};
 	1AC9A622129D627200F95767 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1A525E571293F8DD009E01CE /* Constants.m */;
@@ -179,16 +169,6 @@
 		rLoc = 950;
 		rType = 0;
 		vrLen = 950;
-		vrLoc = 0;
-	};
-	1AC9A623129D627200F95767 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1ABAD55D1295EA8700C2D797 /* PFMoveApplication.h */;
-		name = "PFMoveApplication.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 264;
 		vrLoc = 0;
 	};
 	1AC9A624129D627200F95767 /* PBXTextBookmark */ = {
@@ -211,7 +191,7 @@
 		vrLen = 774;
 		vrLoc = 0;
 	};
-	1AC9A626129D627200F95767 /* PBXTextBookmark */ = {
+	1AC9A630129D636B00F95767 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */;
 		name = "AppDelegate.m: 21";
@@ -220,6 +200,26 @@
 		rType = 0;
 		vrLen = 3460;
 		vrLoc = 0;
+	};
+	1AC9A631129D636B00F95767 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1ABAD55D1295EA8700C2D797 /* PFMoveApplication.h */;
+		name = "PFMoveApplication.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 264;
+		vrLoc = 0;
+	};
+	1AC9A636129D63BA00F95767 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1ABAD55E1295EA8700C2D797 /* PFMoveApplication.m */;
+		name = "PFMoveApplication.m: 90";
+		rLen = 0;
+		rLoc = 3554;
+		rType = 0;
+		vrLen = 3887;
+		vrLoc = 1524;
 	};
 	1ACA33BA129C355900C4CAB6 /* LoginItem.h */ = {
 		uiCtxt = {
@@ -314,8 +314,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 312289651;
-			PBXWorkspaceStateSaveDate = 312289651;
+			PBXPerProjectTemplateStateSaveDate = 312304481;
+			PBXWorkspaceStateSaveDate = 312304481;
 		};
 		perUserProjectItems = {
 			1A4FE6031295C0A400B7C96D /* PBXBookmark */ = 1A4FE6031295C0A400B7C96D /* PBXBookmark */;
@@ -327,12 +327,12 @@
 			1AC9A512129D3BF400F95767 /* PBXTextBookmark */ = 1AC9A512129D3BF400F95767 /* PBXTextBookmark */;
 			1AC9A528129D409500F95767 /* PlistBookmark */ = 1AC9A528129D409500F95767 /* PlistBookmark */;
 			1AC9A564129D46D200F95767 /* PBXTextBookmark */ = 1AC9A564129D46D200F95767 /* PBXTextBookmark */;
-			1AC9A567129D471300F95767 /* PBXTextBookmark */ = 1AC9A567129D471300F95767 /* PBXTextBookmark */;
 			1AC9A622129D627200F95767 /* PBXTextBookmark */ = 1AC9A622129D627200F95767 /* PBXTextBookmark */;
-			1AC9A623129D627200F95767 /* PBXTextBookmark */ = 1AC9A623129D627200F95767 /* PBXTextBookmark */;
 			1AC9A624129D627200F95767 /* PBXTextBookmark */ = 1AC9A624129D627200F95767 /* PBXTextBookmark */;
 			1AC9A625129D627200F95767 /* PBXTextBookmark */ = 1AC9A625129D627200F95767 /* PBXTextBookmark */;
-			1AC9A626129D627200F95767 /* PBXTextBookmark */ = 1AC9A626129D627200F95767 /* PBXTextBookmark */;
+			1AC9A630129D636B00F95767 /* PBXTextBookmark */ = 1AC9A630129D636B00F95767 /* PBXTextBookmark */;
+			1AC9A631129D636B00F95767 /* PBXTextBookmark */ = 1AC9A631129D636B00F95767 /* PBXTextBookmark */;
+			1AC9A636129D63BA00F95767 /* PBXTextBookmark */ = 1AC9A636129D63BA00F95767 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1A525D5B1293E8B3009E01CE /* Source Control */;
 		userBuildSettings = {

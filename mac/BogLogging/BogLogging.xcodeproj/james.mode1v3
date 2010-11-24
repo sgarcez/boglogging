@@ -249,8 +249,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -296,7 +294,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>8</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -332,12 +330,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppDelegate.m</string>
+								<string>PFMoveApplication.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -345,11 +345,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppDelegate.m</string>
+										<string>PFMoveApplication.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1AC9A626129D627200F95767</string>
+										<string>1AC9A636129D63BA00F95767</string>
 										<key>history</key>
 										<array>
 											<string>1A525EEF129409A7009E01CE</string>
@@ -362,10 +362,10 @@
 											<string>1AC9A528129D409500F95767</string>
 											<string>1AC9A564129D46D200F95767</string>
 											<string>1AC9A622129D627200F95767</string>
-											<string>1AC9A623129D627200F95767</string>
-											<string>1AC9A624129D627200F95767</string>
 											<string>1AC9A625129D627200F95767</string>
-											<string>1AC9A567129D471300F95767</string>
+											<string>1AC9A630129D636B00F95767</string>
+											<string>1AC9A631129D636B00F95767</string>
+											<string>1AC9A624129D627200F95767</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -423,9 +423,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1AC9A4AA129D30E400F95767</string>
+				<string>1AC9A633129D636B00F95767</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1AC9A4AB129D30E400F95767</string>
+				<string>1AC9A634129D636B00F95767</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -546,7 +546,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>312304242.56280202</real>
+	<real>312304570.82179803</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -563,11 +563,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1A525D621293E8B9009E01CE</string>
-		<string>1AC9A4B9129D317600F95767</string>
-		<string>1AC9A4BA129D317600F95767</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A525D5F1293E8B9009E01CE</string>
 		<string>/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging.xcodeproj</string>
 	</array>
@@ -593,7 +588,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PFMoveApplication.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -610,8 +605,6 @@
 							<string>176pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -651,7 +644,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1A525D5F1293E8B9009E01CE</string>
-				<string>1AC9A4A1129D30E200F95767</string>
+				<string>1AC9A635129D636B00F95767</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

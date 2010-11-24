@@ -1,0 +1,1 @@
+cp /home/content/03/4844803/html/_db_backups/boglogging/MySQL-`/bin/date +\%a`.sql.gz /home/content/03/4844803/html/_db_archives/MySQL-`/bin/date +\%m`.sql.gz

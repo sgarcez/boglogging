@@ -7,18 +7,17 @@
 //
 
 #import "AppDelegate.h"
-#import "PFMoveApplication.h"
 #import "LoginItem.h"
 
 @implementation AppDelegate
 
-@synthesize window, urlConnection;
+@synthesize window, checkForUpdatesButton, urlConnection;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
-	
-	// Prompt user to move app to Applications folder if it's not already.
-	PFMoveToApplicationsFolderIfNecessary();
 
+	//[LoginItem setStartAtLogin:YES];
+	//[LoginItem willStartAtLogin];
+	
 	// Retrieve the preference of whether to use coloured icons or black icons.
 	if ([[NSUserDefaults standardUserDefaults] boolForKey:kUseBlackIconsUserDefaults])
 		useBlackIcons = YES;

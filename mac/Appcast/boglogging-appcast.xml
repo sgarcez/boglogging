@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>Bog Logging Appcast</title>
+      <link>http://boglogging.com/mac/boglogging-appcast.xml</link>
+      <description>Most recent changes with links to updates.</description>
+      <language>en</language>
+         <item>
+            <title>Version 0.2 (? bugs fixed; ? new features)</title>
+				<sparkle:releaseNotesLink>
+					http://boglogging.com/mac/0.2.html
+				</sparkle:releaseNotesLink>
+            <pubDate>Wed, 24 Nov 2010 12:00:00 +0000</pubDate>
+            <enclosure url="http://boglogging.com/mac/?.zip" sparkle:version="0.2" length="?" type="application/octet-stream" sparkle:dsaSignature="?" />
+         </item>
+         <item>
+            <title>Version 0.1</title>
+				<sparkle:releaseNotesLink>
+					http://boglogging.com/mac/0.1.html
+				</sparkle:releaseNotesLink>
+            <pubDate>Fri, 19 Nov 2010 10:00:00 +0000</pubDate>
+            <enclosure url="http://boglogging.com/mac/?.zip" sparkle:version="0.1" length="?" type="application/octet-stream" sparkle:dsaSignature="?" />
+         </item>
+   </channel>
+</rss>

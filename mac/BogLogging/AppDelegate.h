@@ -8,13 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5)
-@interface AppDelegate : NSObject
-#else
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-#endif
-{
+@interface AppDelegate : NSObject {
 	NSWindow *window;
+	NSButton *checkForUpdatesButton;
 	
 	BOOL engaged;
 	BOOL useBlackIcons;
@@ -31,6 +27,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, retain) NSURLConnection *urlConnection;
+@property (nonatomic, retain) IBOutlet NSButton *checkForUpdatesButton;
 
 - (void)updateMenu;
 - (void)startConnection;

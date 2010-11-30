@@ -11,7 +11,8 @@
 
 @implementation AppDelegate
 
-@synthesize window, urlConnection, launchAtLoginButton, checkForUpdatesButton, versionNumberTextField;
+@synthesize window, menu, statusItem, launchAtLoginButton, checkForUpdatesButton, versionNumberTextField;
+@synthesize fetchTimer, urlConnection, urlData;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
 
@@ -26,29 +27,29 @@
 		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
 
 	// Setup the drop down menu.
-	menu = [[NSMenu allocWithZone:[NSMenu menuZone]] init];
-	[menu addItemWithTitle:kMenuFreeString action:NULL keyEquivalent:@""];
-	[menu addItem:[NSMenuItem separatorItem]];
+	self.menu = [[[NSMenu allocWithZone:[NSMenu menuZone]] init] autorelease];
+	[self.menu addItemWithTitle:kMenuFreeString action:NULL keyEquivalent:@""];
+	[self.menu addItem:[NSMenuItem separatorItem]];
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-		[menu addItemWithTitle:@"Use Black Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];	
+		[self.menu addItemWithTitle:@"Use Black Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];	
 	else
-		[menu addItemWithTitle:@"Use Colour Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
-	[menu addItemWithTitle:@"Settings" action:@selector(openSettings:) keyEquivalent:@""];
-	[menu addItemWithTitle:@"Quit" action:@selector(appQuit:) keyEquivalent:@""];
+		[self.menu addItemWithTitle:@"Use Colour Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
+	[self.menu addItemWithTitle:@"Settings" action:@selector(openSettings:) keyEquivalent:@""];
+	[self.menu addItemWithTitle:@"Quit" action:@selector(appQuit:) keyEquivalent:@""];
 	
 	// Setup the status bar item.
-	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:-1] retain];
+	self.statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:-1] retain];
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-		[statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
+		[self.statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
 	else
-		[statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
-	[statusItem setTarget:self];
-	[statusItem setHighlightMode:YES];
-	[statusItem setMenu:menu];
+		[self.statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
+	[self.statusItem setTarget:self];
+	[self.statusItem setHighlightMode:YES];
+	[self.statusItem setMenu:self.menu];
 	
 	// The fetch connection preparation.
-	urlData = [[NSMutableData alloc] init];
-	fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
+	self.urlData = [[[NSMutableData alloc] init] autorelease];
+	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
 	
 	// Register for system sleep/wake notifications.
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
@@ -57,13 +58,16 @@
 
 - (void)dealloc {
 	[[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver:self];
-	self.urlConnection = nil;
-	[menu release];
-	[statusItem release];
-	
+
+	self.menu = nil;
+	self.statusItem = nil;
 	self.launchAtLoginButton = nil;
 	self.checkForUpdatesButton = nil;
 	self.versionNumberTextField = nil;
+	
+	self.fetchTimer = nil;
+	self.urlConnection = nil;
+	self.urlData = nil;
 	
 	[super dealloc];
 }
@@ -75,12 +79,12 @@
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue]) {
 		[self updateMenu];
 		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kUseColourIconUserDefaults];
-		[[menu itemAtIndex:2] setTitle:@"Use Colour Icon"];
+		[[self.menu itemAtIndex:2] setTitle:@"Use Colour Icon"];
 	}
 	else {
 		[self updateMenu];
 		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
-		[[menu itemAtIndex:2] setTitle:@"Use Black Icon"];
+		[[self.menu itemAtIndex:2] setTitle:@"Use Black Icon"];
 	}
 }
 
@@ -120,40 +124,43 @@
 
 - (void)workspaceWillSleepNotification:(NSNotification *)notification {
 	NSLog(@"workspaceWillSleepNotification");
-	[fetchTimer invalidate];
+	[self.fetchTimer invalidate];
+	self.fetchTimer = nil;
 	self.urlConnection = nil;
-	[urlData setLength:0];
+	self.urlData = nil;
 }
 
 - (void)workspaceDidWakeNotification:(NSNotification *)notification {
 	NSLog(@"workspaceDidWakeNotification");
+	self.urlData = [[[NSMutableData alloc] init] autorelease];
+	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];	
 }
 
 #pragma mark -
 #pragma mark Update Menu
 
 - (void)updateMenu {
-	if (connectionError > 2) {
-		[[menu itemAtIndex:0] setTitle:kMenuErrorString];
+	if (connectionError > 4) {
+		[[self.menu itemAtIndex:0] setTitle:kMenuErrorString];
 		if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-			[statusItem setImage:[NSImage imageNamed:@"status-colour-error.png"]];
+			[self.statusItem setImage:[NSImage imageNamed:@"status-colour-error.png"]];
 		else
-			[statusItem setImage:[NSImage imageNamed:@"status-black-error.png"]];
+			[self.statusItem setImage:[NSImage imageNamed:@"status-black-error.png"]];
 	}
 	else {
 		if (engaged) {
-			[[menu itemAtIndex:0] setTitle:kMenuEngagedString];
+			[[self.menu itemAtIndex:0] setTitle:kMenuEngagedString];
 			if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-				[statusItem setImage:[NSImage imageNamed:@"status-colour-engadged.png"]];
+				[self.statusItem setImage:[NSImage imageNamed:@"status-colour-engadged.png"]];
 			else
-				[statusItem setImage:[NSImage imageNamed:@"status-black-engadged.png"]];
+				[self.statusItem setImage:[NSImage imageNamed:@"status-black-engadged.png"]];
 		}
 		else {
-			[[menu itemAtIndex:0] setTitle:kMenuFreeString];
+			[[self.menu itemAtIndex:0] setTitle:kMenuFreeString];
 			if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-				[statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
+				[self.statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
 			else
-				[statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
+				[self.statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
 		}		
 	}
 }
@@ -164,7 +171,7 @@
 - (void)startConnection {
 	NSLog(@"fetching");
 	NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:kStateURLString] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:2.0f];
-	self.urlConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
+	self.urlConnection = [[[NSURLConnection alloc] initWithRequest:urlRequest delegate:self] autorelease];
 	if (!self.urlConnection)
 		[self connectionError:[NSError errorWithDomain:@"No URLConnection available" code:-100 userInfo:nil]];
 }
@@ -172,7 +179,7 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     // Now the request/response exchange is complete we can check the response code to ensure it is 2xx and if not kill the connection.
 	if (([(NSHTTPURLResponse*)response statusCode] / 100) == 2) {
-		[urlData setLength:0];
+		[self.urlData setLength:0];
 	} 
 	else {
 		[self killConnection];
@@ -181,12 +188,14 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)receiveData {
-    [urlData appendData:receiveData];
+    [self.urlData appendData:receiveData];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	connectionError = 0;
-	engaged = [[NSString stringWithCString:[urlData bytes] encoding:NSUTF8StringEncoding] boolValue];
+	NSString *responseString = [[NSString alloc] initWithCString:[self.urlData bytes] encoding:NSUTF8StringEncoding];
+	engaged = [responseString boolValue];
+	[responseString release];
 	[self updateMenu];
 	[self killConnection];
 	NSLog(@"fetched: %d", engaged);
@@ -204,7 +213,7 @@
 
 - (void)killConnection {
 	self.urlConnection = nil;
-	[urlData setLength:0];
+	[self.urlData setLength:0];
 }
 
 - (void)connectionError:(NSError *)parseError {

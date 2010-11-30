@@ -350,7 +350,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1AD3418512A5A2750011962A</string>
+										<string>1A771F4312A5AAC2002E2AAB</string>
 										<key>history</key>
 										<array>
 											<string>1A525EEF129409A7009E01CE</string>
@@ -367,10 +367,10 @@
 											<string>1AD3415F12A59FAF0011962A</string>
 											<string>1AD3416112A59FAF0011962A</string>
 											<string>1AD3416312A59FAF0011962A</string>
-											<string>1AD3416A12A5A0FC0011962A</string>
 											<string>1AD3416B12A5A0FC0011962A</string>
-											<string>1AD3416C12A5A0FC0011962A</string>
-											<string>1AD3416D12A5A0FC0011962A</string>
+											<string>1A771F2912A5A78C002E2AAB</string>
+											<string>1A771F2A12A5A78C002E2AAB</string>
+											<string>1A771F2B12A5A78C002E2AAB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -428,9 +428,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1AD3408D12A5890A0011962A</string>
+				<string>1A771F2D12A5A78C002E2AAB</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1AD3408E12A5890A0011962A</string>
+				<string>1A771F2E12A5A78C002E2AAB</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -551,7 +551,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>312844917.48919499</real>
+	<real>312847042.33402801</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -568,12 +568,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1A525D621293E8B9009E01CE</string>
-		<string>1AD340BA12A5913B0011962A</string>
-		<string>1AD340BB12A5913B0011962A</string>
+		<string>1A771F2F12A5A78C002E2AAB</string>
+		<string>1A771F3012A5A78C002E2AAB</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A525D5F1293E8B9009E01CE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -598,7 +597,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppDelegate.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -656,7 +655,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1A525D5F1293E8B9009E01CE</string>
-				<string>1AD3408912A589090011962A</string>
+				<string>1A771F1712A5A616002E2AAB</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -778,13 +777,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>1AD340B212A5913B0011962A</string>
+				<string>1A771F1C12A5A76B002E2AAB</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>1AD340B312A5913B0011962A</string>
-				<string>1AD340B412A5913B0011962A</string>
-				<string>1AD340B512A5913B0011962A</string>
-				<string>1AD340B612A5913B0011962A</string>
-				<string>1AD340B712A5913B0011962A</string>
+				<string>1A771F1D12A5A76B002E2AAB</string>
+				<string>1A771F1E12A5A76B002E2AAB</string>
+				<string>1A771F1F12A5A76B002E2AAB</string>
+				<string>1A771F2012A5A76B002E2AAB</string>
+				<string>1A771F2112A5A76B002E2AAB</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -948,7 +947,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>1AD340B812A5913B0011962A</string>
+				<string>1A771F2212A5A76B002E2AAB</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -958,7 +957,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

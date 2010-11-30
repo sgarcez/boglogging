@@ -10,10 +10,11 @@
 
 @interface AppDelegate : NSObject {
 	NSWindow *window;
+	NSButton *launchAtLoginButton;
 	NSButton *checkForUpdatesButton;
+	NSTextField *versionNumberTextField;
 	
 	BOOL engaged;
-	BOOL useBlackIcons;
 
 	NSMenu *menu;
 	NSStatusItem *statusItem;
@@ -27,7 +28,14 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, retain) NSURLConnection *urlConnection;
+@property (nonatomic, retain) IBOutlet NSButton *launchAtLoginButton;
 @property (nonatomic, retain) IBOutlet NSButton *checkForUpdatesButton;
+@property (nonatomic, retain) IBOutlet NSTextField *versionNumberTextField;
+
+- (void)toggleIconColour:(id)sender;
+- (void)openSettings:(id)sender;
+- (void)toggleLaunchAtLogin:(id)sender;
+- (void)appQuit:(id)sender;
 
 - (void)updateMenu;
 - (void)startConnection;

@@ -11,35 +11,37 @@
 
 @implementation AppDelegate
 
-@synthesize window, checkForUpdatesButton, urlConnection;
+@synthesize window, urlConnection, launchAtLoginButton, checkForUpdatesButton, versionNumberTextField;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
 
-	//[LoginItem setStartAtLogin:YES];
-	//[LoginItem willStartAtLogin];
+	// If the launch at login user default is nil, set it to the default of YES.
+	if ([[NSUserDefaults standardUserDefaults] objectForKey:kLaunchAtLoginUserDefaults] == nil) {
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kLaunchAtLoginUserDefaults];
+		[LoginItem setStartAtLogin:YES];
+	}
 	
-	// Retrieve the preference of whether to use coloured icons or black icons.
-	if ([[NSUserDefaults standardUserDefaults] boolForKey:kUseBlackIconsUserDefaults])
-		useBlackIcons = YES;
+	// If the use colour icon user default for is nil, set it to the default of YES.
+	if ([[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] == nil)
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
 
 	// Setup the drop down menu.
 	menu = [[NSMenu allocWithZone:[NSMenu menuZone]] init];
 	[menu addItemWithTitle:kMenuFreeString action:NULL keyEquivalent:@""];
 	[menu addItem:[NSMenuItem separatorItem]];
-	if (useBlackIcons)
-		[menu addItemWithTitle:@"Use Colour Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
-	else
+	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
 		[menu addItemWithTitle:@"Use Black Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];	
+	else
+		[menu addItemWithTitle:@"Use Colour Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
 	[menu addItemWithTitle:@"Settings" action:@selector(openSettings:) keyEquivalent:@""];
 	[menu addItemWithTitle:@"Quit" action:@selector(appQuit:) keyEquivalent:@""];
 	
 	// Setup the status bar item.
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:-1] retain];
-	if (useBlackIcons)
-		[statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
-	else
+	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
 		[statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
-	//[statusItem setTitle:kStatusItemEngagedString];
+	else
+		[statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
 	[statusItem setTarget:self];
 	[statusItem setHighlightMode:YES];
 	[statusItem setMenu:menu];
@@ -58,49 +60,27 @@
 	self.urlConnection = nil;
 	[menu release];
 	[statusItem release];
+	
+	self.launchAtLoginButton = nil;
+	self.checkForUpdatesButton = nil;
+	self.versionNumberTextField = nil;
+	
 	[super dealloc];
 }
 
-- (void)updateMenu {
-	if (connectionError > 2) {
-		[[menu itemAtIndex:0] setTitle:kMenuErrorString];
-		if (useBlackIcons)
-			[statusItem setImage:[NSImage imageNamed:@"status-black-error.png"]];
-		else
-			[statusItem setImage:[NSImage imageNamed:@"status-colour-error.png"]];
-	}
-	else {
-		if (engaged) {
-			[[menu itemAtIndex:0] setTitle:kMenuEngagedString];
-			if (useBlackIcons)
-				[statusItem setImage:[NSImage imageNamed:@"status-black-engadged.png"]];
-			else
-				[statusItem setImage:[NSImage imageNamed:@"status-colour-engadged.png"]];
-			//[statusItem setTitle:kStatusItemEngagedString];
-		}
-		else {
-			[[menu itemAtIndex:0] setTitle:kMenuFreeString];
-			if (useBlackIcons)
-				[statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];		
-			else
-				[statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
-			//[statusItem setTitle:kStatusItemFreeString];
-		}		
-	}
-}
+#pragma mark -
+#pragma mark IBActions
 
 - (void)toggleIconColour:(id)sender {
-	if (useBlackIcons) {
-		useBlackIcons = NO;
+	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue]) {
 		[self updateMenu];
-		[[NSUserDefaults standardUserDefaults] setBool:NO forKey:kUseBlackIconsUserDefaults];
-		[[menu itemAtIndex:2] setTitle:@"Use Black Icon"];
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kUseColourIconUserDefaults];
+		[[menu itemAtIndex:2] setTitle:@"Use Colour Icon"];
 	}
 	else {
-		useBlackIcons = YES;
 		[self updateMenu];
-		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kUseBlackIconsUserDefaults];
-		[[menu itemAtIndex:2] setTitle:@"Use Colour Icon"];
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
+		[[menu itemAtIndex:2] setTitle:@"Use Black Icon"];
 	}
 }
 
@@ -108,13 +88,35 @@
 	if (![NSApp isActive]) {
 		[NSApp activateIgnoringOtherApps:YES];
 	}
+	
+	[self.versionNumberTextField setStringValue:[NSString stringWithFormat:@"%@ %@", @"Version:", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+	
+	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kLaunchAtLoginUserDefaults] boolValue])
+		[self.launchAtLoginButton setState:1];
+	else
+		[self.launchAtLoginButton setState:0];
+
 	[window center];
 	[window makeKeyAndOrderFront:self];
+}
+
+- (void)toggleLaunchAtLogin:(id)sender {
+	if ([self.launchAtLoginButton state]) {
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kLaunchAtLoginUserDefaults];
+		[LoginItem setStartAtLogin:YES];
+	}
+	else {
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kLaunchAtLoginUserDefaults];
+		[LoginItem setStartAtLogin:NO];
+	}
 }
 
 - (void)appQuit:(id)sender {
 	[NSApp terminate:sender];
 }
+
+#pragma mark -
+#pragma mark NSNotifications
 
 - (void)workspaceWillSleepNotification:(NSNotification *)notification {
 	NSLog(@"workspaceWillSleepNotification");
@@ -125,6 +127,35 @@
 
 - (void)workspaceDidWakeNotification:(NSNotification *)notification {
 	NSLog(@"workspaceDidWakeNotification");
+}
+
+#pragma mark -
+#pragma mark Update Menu
+
+- (void)updateMenu {
+	if (connectionError > 2) {
+		[[menu itemAtIndex:0] setTitle:kMenuErrorString];
+		if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
+			[statusItem setImage:[NSImage imageNamed:@"status-colour-error.png"]];
+		else
+			[statusItem setImage:[NSImage imageNamed:@"status-black-error.png"]];
+	}
+	else {
+		if (engaged) {
+			[[menu itemAtIndex:0] setTitle:kMenuEngagedString];
+			if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
+				[statusItem setImage:[NSImage imageNamed:@"status-colour-engadged.png"]];
+			else
+				[statusItem setImage:[NSImage imageNamed:@"status-black-engadged.png"]];
+		}
+		else {
+			[[menu itemAtIndex:0] setTitle:kMenuFreeString];
+			if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
+				[statusItem setImage:[NSImage imageNamed:@"status-colour-free.png"]];
+			else
+				[statusItem setImage:[NSImage imageNamed:@"status-black-free.png"]];
+		}		
+	}
 }
 
 #pragma mark -

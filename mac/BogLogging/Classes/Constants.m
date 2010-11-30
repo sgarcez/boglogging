@@ -15,10 +15,9 @@ NSString* const kStateURLString = @"http://boglogging.com/api/state/";
 NSString* const kMenuErrorString = @"Bog connection error!";
 NSString* const kMenuEngagedString = @"Bog is engaged";
 NSString* const kMenuFreeString = @"Bog is free";
-NSString* const kStatusItemEngagedString = @"Engaged";
-NSString* const kStatusItemFreeString = @"Free";
 
-// NSUserDefaults key for whether to use black or coloured icons.
-NSString* const kUseBlackIconsUserDefaults = @"kUseBlackIconsUserDefaults";
-// NSUserDefaults key used to test whether this is the first time the app is launched. If so for example set  set the default launch at login for the app to YES.
-NSString* const kApplicationDidMoveUserDefaults = @"kApplicationDidMoveUserDefaults";
+// Launch at login NSUserDefaults key.
+NSString* const kLaunchAtLoginUserDefaults = @"kLaunchAtLoginUserDefaults";
+
+// Use colour icon NSUserDefaults key.
+NSString* const kUseColourIconUserDefaults = @"kUseColourIconUserDefaults";

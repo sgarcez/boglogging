@@ -19,8 +19,8 @@
 		1ABAD5BD1295F66F00C2D797 /* status-colour-free.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B71295F66F00C2D797 /* status-colour-free.png */; };
 		1AC9A642129D66BD00F95767 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC9A641129D66BD00F95767 /* Sparkle.framework */; };
 		1AC9A64F129D670800F95767 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AC9A641129D66BD00F95767 /* Sparkle.framework */; };
-		1AC9A694129D839E00F95767 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1AC9A693129D839E00F95767 /* dsa_pub.pem */; };
 		1ACA33BC129C355900C4CAB6 /* LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA33BB129C355900C4CAB6 /* LoginItem.m */; };
+		1AD3408512A588F20011962A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1AD3408412A588F20011962A /* dsa_pub.pem */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -57,9 +57,9 @@
 		1ABAD5B61295F66F00C2D797 /* status-colour-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-colour-error.png"; sourceTree = "<group>"; };
 		1ABAD5B71295F66F00C2D797 /* status-colour-free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-colour-free.png"; sourceTree = "<group>"; };
 		1AC9A641129D66BD00F95767 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		1AC9A693129D839E00F95767 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		1ACA33BA129C355900C4CAB6 /* LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginItem.h; path = Classes/LoginItem.h; sourceTree = "<group>"; };
 		1ACA33BB129C355900C4CAB6 /* LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginItem.m; path = Classes/LoginItem.m; sourceTree = "<group>"; };
+		1AD3408412A588F20011962A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1AC9A693129D839E00F95767 /* dsa_pub.pem */,
+				1AD3408412A588F20011962A /* dsa_pub.pem */,
 				8D1107310486CEB800E47090 /* BogLogging-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -244,7 +244,7 @@
 				1ABAD5BB1295F66F00C2D797 /* status-colour-engadged.png in Resources */,
 				1ABAD5BC1295F66F00C2D797 /* status-colour-error.png in Resources */,
 				1ABAD5BD1295F66F00C2D797 /* status-colour-free.png in Resources */,
-				1AC9A694129D839E00F95767 /* dsa_pub.pem in Resources */,
+				1AD3408512A588F20011962A /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

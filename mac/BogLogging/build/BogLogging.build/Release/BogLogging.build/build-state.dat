@@ -1,0 +1,692 @@
+TBogLogging
+v7
+r0
+t312844880.585075
+cCheck dependencies
+cProcessInfoPlistFile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist" BogLogging-Info.plist
+cCopyStringsFile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCompileXIB /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/MainMenu.xib
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/icon.icns" Assets/icon.icns
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png" Assets/status-black-engadged.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-error.png" Assets/status-black-error.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-free.png" Assets/status-black-free.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png" Assets/status-colour-engadged.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-error.png" Assets/status-colour-error.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-free.png" Assets/status-colour-free.png
+cCpResource "build/Release/Bog Logging.app/Contents/Resources/dsa_pub.pem" dsa_pub.pem
+cProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/LoginItem.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging" normal x86_64
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/LoginItem.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging" normal i386
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/LoginItem.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging" normal ppc
+cCreateUniversalBinary "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" normal "x86_64 i386 ppc"
+cGenerateDSYMFile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app.dSYM" "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"
+cPBXCp "build/Release/Bog Logging.app/Contents/Frameworks/Sparkle.framework" Sparkle.framework
+cTouch "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004C238B9B00000000000000EE
+t1277397915
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Security.framework/Security
+c000000004B760CDB000000000006676C
+t1266027739
+s419692
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004B760CDC00000000000371FC
+t1266027740
+s225788
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.h
+c000000004CF5696F000000000000043B
+t1291151727
+s1083
+i<Cocoa/Cocoa.h>
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m
+c000000004CF56AAB0000000000002040
+t1291152043
+s8256
+i"AppDelegate.h"
+i"LoginItem.h"
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/icon.icns
+c000000004CEFFEFD0000000000025407
+t1290796797
+s152583
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-engadged.png
+c000000004CEFFEFD00000000000000F6
+t1290796797
+s246
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-error.png
+c000000004CEFFEFD0000000000000145
+t1290796797
+s325
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-free.png
+c000000004CEFFEFD0000000000000103
+t1290796797
+s259
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-engadged.png
+c000000004CEFFEFD000000000000018E
+t1290796797
+s398
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-error.png
+c000000004CEFFEFD0000000000000165
+t1290796797
+s357
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-free.png
+c000000004CEFFEFD00000000000001AD
+t1290796797
+s429
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch
+c000000004CEFFEFD00000000000000AE
+t1290796797
+s174
+i<Cocoa/Cocoa.h>
+i"Constants.h"
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.h
+c000000004CF568A1000000000000021D
+t1291151521
+s541
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m
+c000000004CF568BD00000000000002AF
+t1291151549
+s687
+i"Constants.h"
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.h
+c000000004CEFFEFD0000000000000109
+t1290796797
+s265
+i<Cocoa/Cocoa.h>
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m
+c000000004CEFFEFD0000000000000AD2
+t1290796797
+s2770
+i"LoginItem.h"
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/InfoPlist.strings
+c000000004CEFFEFD000000000000002D
+t1290796797
+s45
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/MainMenu.xib
+c000000004CF569980000000000032237
+t1291151768
+s205367
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Sparkle.framework
+c000000004CEFFEFD00000000000000CC
+t1290796797
+s204
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Sparkle.framework/Sparkle
+c000000004CEFFEFD00000000000712B4
+t1290796797
+s463540
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o
+t1291152046
+s40868
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging
+t1291152046
+s28816
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging.LinkFileList
+c000000004CF560240000000000000231
+t1291149348
+s561
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o
+t1291152022
+s6068
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/LoginItem.o
+t1291152022
+s11504
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o
+t1291152022
+s4888
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o
+t1291152046
+s45064
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging
+t1291152046
+s27936
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging.LinkFileList
+c000000004CF56024000000000000022D
+t1291149348
+s557
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o
+t1291152022
+s6144
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/LoginItem.o
+t1291152022
+s11816
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o
+t1291152022
+s4916
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o
+t1291152046
+s60908
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging
+t1291152046
+s36584
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging.LinkFileList
+c000000004CF560240000000000000239
+t1291149348
+s569
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o
+t1291152022
+s6276
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/LoginItem.o
+t1291152022
+s14456
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o
+t1291152022
+s5088
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app
+t1291152046
+s102
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app.dSYM
+t1291152046
+s102
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Frameworks/Sparkle.framework
+t1291151337
+s204
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist
+t1291151336
+s1176
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging
+t1291152046
+s101664
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/PkgInfo
+t1291151336
+s8
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1291151336
+s92
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/MainMenu.nib
+t1291152019
+s38560
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/dsa_pub.pem
+t1291151336
+s1178
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/icon.icns
+t1291151336
+s152583
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png
+t1291151336
+s246
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-black-error.png
+t1291151336
+s325
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-black-free.png
+t1291151336
+s259
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png
+t1291151336
+s398
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-colour-error.png
+t1291151336
+s357
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/status-colour-free.png
+t1291151336
+s429
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/dsa_pub.pem
+c000000004CF5514B000000000000049A
+t1291145547
+s1178
+
+N/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m
+c000000004CEFFEFD00000000000000F6
+t1290796797
+s246
+i<Cocoa/Cocoa.h>
+
+N/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch.gch
+t1291152022
+s52822480
+
+N/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch.gch
+t1291152022
+s49897808
+
+N/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch.gch
+t1291152022
+s50053392
+
+NBogLogging-Info.plist
+c000000004CF5566400000000000004BA
+t1291146852
+s1210
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies312844880#312844880#0(0"0(0#1#0"8653587744#0"0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s312844846.165393
+e312844846.403145
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m312844846#312844846#0(0"0(0#0#74"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m8637312032#1871"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/AppDelegate.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s312844822.465200
+e312844822.629275
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m312844822#312844822#0(0"0(0#0#80"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m8651543328#1875"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Constants.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/LoginItem.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s312844822.466322
+e312844822.690005
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/LoginItem.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m312844822#312844822#0(0"0(0#0#80"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m8648799712#1875"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/LoginItem.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s312844822.463380
+e312844822.629024
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m312844822#312844822#0(0"0(0#0#67"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m8717358144#1857"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/main.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s312844846.166347
+e312844846.413010
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m312844846#312844846#0(0"0(0#0#74"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m8626489120#1878"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/AppDelegate.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s312844822.629388
+e312844822.749095
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m312844822#312844822#0(0"0(0#0#80"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m8653220480#1882"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Constants.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/LoginItem.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s312844822.630710
+e312844822.796754
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/LoginItem.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m312844822#312844822#0(0"0(0#0#80"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m8653186432#1882"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/LoginItem.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s312844822.613905
+e312844822.743855
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m312844822#312844822#0(0"0(0#0#67"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m8653419552#1864"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/main.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s312844846.002573
+e312844846.430267
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m312844846#312844846#0(0"0(0#0#74"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m8634975168#1877"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/AppDelegate.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/AppDelegate.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s312844822.461633
+e312844822.615654
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m312844822#312844822#0(0"0(0#0#80"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m8642226208#1881"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/Constants.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Constants.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/LoginItem.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s312844822.462330
+e312844822.682903
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/LoginItem.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m312844822#312844822#0(0"0(0#0#80"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m8729904224#1881"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Classes/LoginItem.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/LoginItem.o0#
+
+CCompileC build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s312844822.460190
+e312844822.613753
+r1
+xCompileC
+xbuild/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m312844822#312844822#0(0"0(0#0#67"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m8738483360#1863"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -include /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/main.m -o /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/MainMenu.xib
+s312844819.247264
+e312844819.492461
+r1
+xCompileXIB
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib312844819#312844819#0(0"0(0#0#87"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/MainMenu.xib8644515072#438"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/MainMenu.nib" /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.5.sdk0#
+
+CCopyStringsFile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s312844136.937355
+e312844136.965045
+r1
+xCopyStringsFile
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings312844136#312844137#0(0"0(0#0#92"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/English.lproj/InfoPlist.strings8628892416#417"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources/English.lproj"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/dsa_pub.pem" dsa_pub.pem
+s312844136.942341
+e312844136.947016
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/dsa_pub.pem
+xdsa_pub.pem
+lSLF07#2@16"Copy dsa_pub.pem312844136#312844137#0(0"0(0#0#72"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/dsa_pub.pem8613869440#436"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/dsa_pub.pem "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/icon.icns" Assets/icon.icns
+s312844136.938350
+e312844136.943609
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/icon.icns
+xAssets/icon.icns
+lSLF07#2@21"Copy Assets/icon.icns312844136#312844137#0(0"0(0#0#77"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/icon.icns8639037824#441"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/icon.icns "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png" Assets/status-black-engadged.png
+s312844136.938793
+e312844136.943762
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-black-engadged.png
+xAssets/status-black-engadged.png
+lSLF07#2@37"Copy Assets/status-black-engadged.png312844136#312844137#0(0"0(0#0#93"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-engadged.png8635304352#457"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-engadged.png "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-error.png" Assets/status-black-error.png
+s312844136.939238
+e312844136.944998
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-black-error.png
+xAssets/status-black-error.png
+lSLF07#2@34"Copy Assets/status-black-error.png312844136#312844137#0(0"0(0#0#90"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-error.png8624440800#454"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-error.png "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-black-free.png" Assets/status-black-free.png
+s312844136.939685
+e312844136.944474
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-black-free.png
+xAssets/status-black-free.png
+lSLF07#2@33"Copy Assets/status-black-free.png312844136#312844137#0(0"0(0#0#89"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-free.png8609645824#453"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-black-free.png "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png" Assets/status-colour-engadged.png
+s312844136.940181
+e312844136.946742
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-colour-engadged.png
+xAssets/status-colour-engadged.png
+lSLF07#2@38"Copy Assets/status-colour-engadged.png312844136#312844137#0(0"0(0#0#94"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-engadged.png8606942400#458"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-engadged.png "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-error.png" Assets/status-colour-error.png
+s312844136.940886
+e312844136.946098
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-colour-error.png
+xAssets/status-colour-error.png
+lSLF07#2@35"Copy Assets/status-colour-error.png312844136#312844137#0(0"0(0#0#91"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-error.png8617888544#455"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-error.png "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCpResource "build/Release/Bog Logging.app/Contents/Resources/status-colour-free.png" Assets/status-colour-free.png
+s312844136.941565
+e312844136.947596
+r1
+xCpResource
+xbuild/Release/Bog Logging.app/Contents/Resources/status-colour-free.png
+xAssets/status-colour-free.png
+lSLF07#2@34"Copy Assets/status-colour-free.png312844136#312844137#0(0"0(0#0#90"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-free.png8614106208#454"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Assets/status-colour-free.png "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Resources"0#
+
+CCreateUniversalBinary "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" normal "x86_64 i386 ppc"
+s312844846.451189
+e312844846.454058
+r1
+xCreateUniversalBinary
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@105"CreateUniversalBinary "build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" normal "x86_64 i386 ppc"312844846#312844846#0(0"0(0#0#76"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/x86_64 i386 ppc8619915136#652"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /usr/bin/lipo -create "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging" "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging" "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging" -output "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"0#
+
+CGenerateDSYMFile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app.dSYM" "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"
+s312844846.454123
+e312844846.477275
+r1
+xGenerateDSYMFile
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app.dSYM
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging
+lSLF07#2@112"GenerateDSYMFile "build/Release/Bog Logging.app.dSYM" "build/Release/Bog Logging.app/Contents/MacOS/Bog Logging"312844846#312844846#0(0"0(0#0#117"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging8648846848#321"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/usr/bin/dsymutil "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/MacOS/Bog Logging" -o "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app.dSYM"0#
+
+CLd "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging" normal i386
+s312844846.403263
+e312844846.428747
+r1
+xLd
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging
+xnormal
+xi386
+lSLF07#2@145"Link /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging312844846#312844846#0(0"0(0#0#0"8613481888#834"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -filelist "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework SystemConfiguration -framework Security -framework Sparkle -o "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/i386/Bog Logging"0#
+
+CLd "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging" normal ppc
+s312844846.413102
+e312844846.436701
+r1
+xLd
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging
+xnormal
+xppc
+lSLF07#2@144"Link /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging312844846#312844846#0(0"0(0#0#0"8640552992#831"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -filelist "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework SystemConfiguration -framework Security -framework Sparkle -o "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/ppc/Bog Logging"0#
+
+CLd "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging" normal x86_64
+s312844846.430325
+e312844846.451123
+r1
+xLd
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging
+xnormal
+xx86_64
+lSLF07#2@147"Link /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging312844846#312844846#0(0"0(0#0#0"8635957248#840"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -filelist "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework SystemConfiguration -framework Security -framework Sparkle -o "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Objects-normal/x86_64/Bog Logging"0#
+
+CPBXCp "build/Release/Bog Logging.app/Contents/Frameworks/Sparkle.framework" Sparkle.framework
+s312844137.440516
+e312844137.468241
+r1
+xPBXCp
+xbuild/Release/Bog Logging.app/Contents/Frameworks/Sparkle.framework
+xSparkle.framework
+lSLF07#2@22"Copy Sparkle.framework312844137#312844137#0(0"0(0#0#78"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Sparkle.framework8608339840#443"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/Sparkle.framework "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Frameworks"0#
+
+CProcessInfoPlistFile "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist" BogLogging-Info.plist
+s312844136.934183
+e312844136.937292
+r1
+xProcessInfoPlistFile
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist
+xBogLogging-Info.plist
+lSLF07#2@29"Process BogLogging-Info.plist312844136#312844137#0(0"0(0#0#82"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging-Info.plist8619285504#395"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    builtin-infoPlistUtility BogLogging-Info.plist -genpkginfo "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s312844819.493217
+e312844822.460106
+r1
+xProcessPCH
+x/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch.gch
+xBogLogging_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile BogLogging_Prefix.pch312844819#312844822#0(0"0(0#0#82"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch8738399616#1738"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/i386 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch -o /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-bqlpxmsgwomxklapywkotqmefasw/BogLogging_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s312844819.492546
+e312844822.394205
+r1
+xProcessPCH
+x/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch.gch
+xBogLogging_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile BogLogging_Prefix.pch312844819#312844822#0(0"0(0#0#82"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch8741032224#1742"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/x86_64 -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch -o /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-dcrubpzuprarzianxyolbgjougve/BogLogging_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch.gch BogLogging_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s312844819.493807
+e312844822.351247
+r1
+xProcessPCH
+x/var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch.gch
+xBogLogging_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile BogLogging_Prefix.pch312844819#312844822#0(0"0(0#0#82"/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch8736719712#1746"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-generated-files.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-own-target-headers.hmap" "-I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-all-target-headers.hmap" -iquote "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/Bog Logging-project-headers.hmap" -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release -F/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/include -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources/ppc -I/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/BogLogging.build/Release/BogLogging.build/DerivedSources -c /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging_Prefix.pch -o /var/folders/rq/rqDEw76zEqCxZPpWVQJx-E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/BogLogging_Prefix-gwaagnejxtideabcmdxmmebizani/BogLogging_Prefix.pch.gch0#
+
+CTouch "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app"
+s312844846.477404
+e312844846.479979
+r1
+xTouch
+x/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app
+lSLF07#2@96"Touch /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app312844846#312844846#0(0"0(0#0#0"8637195136#183"    cd /Users/james/Documents/Daggers/boglogging/git/mac/BogLogging    /usr/bin/touch -c "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/build/Release/Bog Logging.app"0#
+

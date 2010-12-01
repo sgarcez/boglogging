@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
-   <channel>
-      <title>Bog Logging Appcast</title>
-      <link>http://boglogging.com/mac/boglogging-appcast.xml</link>
-      <description>Most recent changes with links to updates.</description>
-      <language>en</language>
-      	<!--
-         <item>
-            <title>Version 0.2.1 (1 bugs fixed; 0 new features)</title>
-				<sparkle:releaseNotesLink>
-					http://boglogging.com/mac/boglogging-021.html
-				</sparkle:releaseNotesLink>
-            <pubDate>Wed, 30 Nov 2010 19:45:00 +0000</pubDate>
-            <enclosure url="http://boglogging.com/mac/boglogging-021.zip" sparkle:version="0.2.1" length="574143" type="application/octet-stream" sparkle:dsaSignature="MCwCFAsV3lRNaXmsm0QAZMuyEhikAoIcAhRBQ/CbkrKsIcJHf3DCxmYdn5l3dw==" />
-         </item>
-         -->
-   </channel>
+	<channel>
+		<title>Bog Logging Appcast</title>
+		<link>http://boglogging.com/mac/boglogging-appcast.xml</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>en</language>
+		<item>
+			<title>Version 1.0.1 (2 new features; 1 bug fixed)</title>
+			<description>
+				<![CDATA[
+					<h4>2 new features</h4>
+					<ul>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+					</ul>
+					<h4>1 bug fixed</h4>
+					<ul>
+						<li>Lorem ipsum</li>
+					</ul>
+				]]>
+			</description>
+			<pubDate>Wed, 01 Dec 2010 19:55:00 +0000</pubDate>
+			<enclosure url="http://boglogging.com/mac/boglogging-101.dmg" sparkle:version="1.0.1" length="1219855" type="application/octet-stream" sparkle:dsaSignature="MCwCFGs1aNP5tPUxd7i3HRLOGpNVwo4OAhRi8w+gQEJYfu+8y05JtS3cJW1wHQ==" />
+		</item>
+	</channel>
 </rss>

@@ -12,6 +12,7 @@
 	NSWindow *window;
 	NSMenu *menu;
 	NSStatusItem *statusItem;
+	NSButton *useColourIconButton;
 	NSButton *launchAtLoginButton;
 	NSButton *checkForUpdatesButton;
 	NSTextField *versionNumberTextField;
@@ -27,6 +28,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, retain) NSMenu *menu;
 @property (nonatomic, retain) NSStatusItem *statusItem;
+@property (nonatomic, retain) IBOutlet NSButton *useColourIconButton;
 @property (nonatomic, retain) IBOutlet NSButton *launchAtLoginButton;
 @property (nonatomic, retain) IBOutlet NSButton *checkForUpdatesButton;
 @property (nonatomic, retain) IBOutlet NSTextField *versionNumberTextField;

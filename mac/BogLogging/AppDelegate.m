@@ -11,7 +11,7 @@
 
 @implementation AppDelegate
 
-@synthesize window, menu, statusItem, launchAtLoginButton, checkForUpdatesButton, versionNumberTextField;
+@synthesize window, menu, statusItem, useColourIconButton, launchAtLoginButton, checkForUpdatesButton, versionNumberTextField;
 @synthesize fetchTimer, urlConnection, urlData;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
@@ -30,10 +30,6 @@
 	self.menu = [[[NSMenu allocWithZone:[NSMenu menuZone]] init] autorelease];
 	[self.menu addItemWithTitle:kMenuFreeString action:NULL keyEquivalent:@""];
 	[self.menu addItem:[NSMenuItem separatorItem]];
-	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-		[self.menu addItemWithTitle:@"Use Black Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];	
-	else
-		[self.menu addItemWithTitle:@"Use Colour Icon" action:@selector(toggleIconColour:) keyEquivalent:@""];
 	[self.menu addItemWithTitle:@"Settings" action:@selector(openSettings:) keyEquivalent:@""];
 	[self.menu addItemWithTitle:@"Quit" action:@selector(appQuit:) keyEquivalent:@""];
 	
@@ -61,6 +57,7 @@
 
 	self.menu = nil;
 	self.statusItem = nil;
+	self.useColourIconButton = nil;
 	self.launchAtLoginButton = nil;
 	self.checkForUpdatesButton = nil;
 	self.versionNumberTextField = nil;
@@ -77,14 +74,12 @@
 
 - (void)toggleIconColour:(id)sender {
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue]) {
-		[self updateMenu];
 		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kUseColourIconUserDefaults];
-		[[self.menu itemAtIndex:2] setTitle:@"Use Colour Icon"];
+		[self updateMenu];
 	}
 	else {
-		[self updateMenu];
 		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
-		[[self.menu itemAtIndex:2] setTitle:@"Use Black Icon"];
+		[self updateMenu];
 	}
 }
 
@@ -94,6 +89,11 @@
 	}
 	
 	[self.versionNumberTextField setStringValue:[NSString stringWithFormat:@"%@ %@", @"Version:", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+	
+	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
+		[self.useColourIconButton setState:1];
+	else
+		[self.useColourIconButton setState:0];
 	
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kLaunchAtLoginUserDefaults] boolValue])
 		[self.launchAtLoginButton setState:1];

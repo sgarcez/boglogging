@@ -5,21 +5,15 @@
       <link>http://boglogging.com/mac/boglogging-appcast.xml</link>
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
+      	<!--
          <item>
-            <title>Version 0.2 (? bugs fixed; ? new features)</title>
+            <title>Version 0.2.1 (1 bugs fixed; 0 new features)</title>
 				<sparkle:releaseNotesLink>
-					http://boglogging.com/mac/0.2.html
+					http://boglogging.com/mac/boglogging-021.html
 				</sparkle:releaseNotesLink>
-            <pubDate>Wed, 24 Nov 2010 12:00:00 +0000</pubDate>
-            <enclosure url="http://boglogging.com/mac/?.zip" sparkle:version="0.2" length="?" type="application/octet-stream" sparkle:dsaSignature="?" />
+            <pubDate>Wed, 30 Nov 2010 19:45:00 +0000</pubDate>
+            <enclosure url="http://boglogging.com/mac/boglogging-021.zip" sparkle:version="0.2.1" length="574143" type="application/octet-stream" sparkle:dsaSignature="MCwCFAsV3lRNaXmsm0QAZMuyEhikAoIcAhRBQ/CbkrKsIcJHf3DCxmYdn5l3dw==" />
          </item>
-         <item>
-            <title>Version 0.1</title>
-				<sparkle:releaseNotesLink>
-					http://boglogging.com/mac/0.1.html
-				</sparkle:releaseNotesLink>
-            <pubDate>Fri, 19 Nov 2010 10:00:00 +0000</pubDate>
-            <enclosure url="http://boglogging.com/mac/?.zip" sparkle:version="0.1" length="?" type="application/octet-stream" sparkle:dsaSignature="?" />
-         </item>
+         -->
    </channel>
 </rss>

@@ -15,10 +15,9 @@ extern NSString* const kStateURLString;
 extern NSString* const kMenuErrorString;
 extern NSString* const kMenuEngagedString;
 extern NSString* const kMenuFreeString;
-extern NSString* const kStatusItemEngagedString;
-extern NSString* const kStatusItemFreeString;
 
-// NSUserDefaults key for whether to use black or coloured icons.
-extern NSString* const kUseBlackIconsUserDefaults;
-// NSUserDefaults key used to test whether this is the first time the app is launched. If so for example set  set the default launch at login for the app to YES.
-extern NSString* const kApplicationDidMoveUserDefaults;
+// Launch at login NSUserDefaults key.
+extern NSString* const kLaunchAtLoginUserDefaults;
+
+// Use colour icon NSUserDefaults key.
+extern NSString* const kUseColourIconUserDefaults;

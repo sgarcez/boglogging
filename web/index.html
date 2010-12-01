@@ -1,14 +1,47 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>PROJECT URANUS</title>
+		<title>Bog Logging</title>
 		<meta charset="utf-8">
 		<script type="text/javascript" src="voyager/js/jquery-1.4.4.min.js"></script>
+		<style type="text/css">
+		* {
+			margin: 0;
+		}
+			html, body {
+			height: 100%;
+			overflow:hidden;
+		}
+		.wrapper {
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;
+			margin: 0 auto -1em;
+		}
+		.footer{
+			height: 2em;
+			background-color:#666666;
+			padding-right:5px;
+			padding-top:1px;
+		}
+		
+		.footer p{
+			color:#999999;
+			font-family: Monaco, Lucida Console, monospace;
+			font-size:8pt;
+			text-align:center;
+			font-style:normal;
+			font-weight:normal;
+			text-align:right;
+		}
+		.footer a{
+			color:#ffffff;
+		}
+		</style>
 	</head>
 	<body style="background-color:white">
 
 		<script type="text/javascript">
-		
 		$(document).ready(function() {
 			checkState = function ()
 			{
@@ -16,19 +49,23 @@
 				  $('.result').html(data);
 				  if(data == '0')
 					{
-						$("html").css("background-color","#6ee45e");
+						$(".wrapper").css("background-color","#6ee45e");
 					}else if(data == '1')
 						{
-						$("html").css("background-color","#fa4c4c");
+						$(".wrapper").css("background-color","#fa4c4c");
 						}
 				});
 			}
 			
 		  checkState();
 		  var timer = setInterval( checkState, 3000);
-		
 		});
 		</script>
 
+		<div class="wrapper"></div>
+		<div class="footer">
+			<p>A DAGGERS Production 2010 . <a href="/mac/latest/">Download the Menubar App</a></p>
+		</div>
+		
 	</body>
 </html>

@@ -16,15 +16,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
 
-	// If the launch at login user default is nil, set it to the default of YES.
-	if ([[NSUserDefaults standardUserDefaults] objectForKey:kLaunchAtLoginUserDefaults] == nil) {
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kLaunchAtLoginUserDefaults];
-		[LoginItem setStartAtLogin:YES];
-	}
-	
-	// If the use colour icon user default for is nil, set it to the default of YES.
-	if ([[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] == nil)
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
+	// Check out user defaults for missing or inconsistencies.
+	[self checkUserDefaults];
 
 	// Setup the drop down menu.
 	self.menu = [[[NSMenu allocWithZone:[NSMenu menuZone]] init] autorelease];
@@ -72,6 +65,27 @@
 #pragma mark -
 #pragma mark IBActions
 
+- (void)openSettings:(id)sender {
+	if (![NSApp isActive]) {
+		[NSApp activateIgnoringOtherApps:YES];
+	}
+	
+	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
+		[self.useColourIconButton setState:1];
+	else
+		[self.useColourIconButton setState:0];
+	
+	if ([LoginItem willStartAtLogin])
+		[self.launchAtLoginButton setState:1];
+	else
+		[self.launchAtLoginButton setState:0];
+
+	[self.versionNumberTextField setStringValue:[NSString stringWithFormat:@"%@ %@", @"Version:", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+
+	[window center];
+	[window makeKeyAndOrderFront:self];
+}
+
 - (void)toggleIconColour:(id)sender {
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue]) {
 		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kUseColourIconUserDefaults];
@@ -83,36 +97,11 @@
 	}
 }
 
-- (void)openSettings:(id)sender {
-	if (![NSApp isActive]) {
-		[NSApp activateIgnoringOtherApps:YES];
-	}
-	
-	[self.versionNumberTextField setStringValue:[NSString stringWithFormat:@"%@ %@", @"Version:", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
-	
-	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] boolValue])
-		[self.useColourIconButton setState:1];
-	else
-		[self.useColourIconButton setState:0];
-	
-	if ([[[NSUserDefaults standardUserDefaults] objectForKey:kLaunchAtLoginUserDefaults] boolValue])
-		[self.launchAtLoginButton setState:1];
-	else
-		[self.launchAtLoginButton setState:0];
-
-	[window center];
-	[window makeKeyAndOrderFront:self];
-}
-
 - (void)toggleLaunchAtLogin:(id)sender {
-	if ([self.launchAtLoginButton state]) {
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kLaunchAtLoginUserDefaults];
+	if ([self.launchAtLoginButton state])
 		[LoginItem setStartAtLogin:YES];
-	}
-	else {
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:0] forKey:kLaunchAtLoginUserDefaults];
+	else
 		[LoginItem setStartAtLogin:NO];
-	}
 }
 
 - (void)appQuit:(id)sender {
@@ -137,7 +126,20 @@
 }
 
 #pragma mark -
-#pragma mark Update Menu
+#pragma mark General Methods
+
+- (void)checkUserDefaults {
+	// If the first launch user default is nil, set our app defaults.
+	if ([[NSUserDefaults standardUserDefaults] objectForKey:kSetDefaultLoginItemUserDefaults] == nil) {
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kSetDefaultLoginItemUserDefaults];
+		[LoginItem setStartAtLogin:YES];
+	}
+
+	// If the use colour icon user default for is nil, set it to the default of YES.
+	if ([[NSUserDefaults standardUserDefaults] objectForKey:kUseColourIconUserDefaults] == nil)
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:1] forKey:kUseColourIconUserDefaults];
+	
+}
 
 - (void)updateMenu {
 	if (connectionError > 4) {

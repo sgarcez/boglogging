@@ -37,11 +37,12 @@
 @property (nonatomic, retain) NSURLConnection *urlConnection;
 @property (nonatomic, retain) NSMutableData *urlData;
 
-- (void)toggleIconColour:(id)sender;
 - (void)openSettings:(id)sender;
+- (void)toggleIconColour:(id)sender;
 - (void)toggleLaunchAtLogin:(id)sender;
 - (void)appQuit:(id)sender;
 
+- (void)checkUserDefaults;
 - (void)updateMenu;
 - (void)startConnection;
 - (void)killConnection;

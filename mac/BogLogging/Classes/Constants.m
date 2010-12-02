@@ -16,8 +16,8 @@ NSString* const kMenuErrorString = @"Bog connection error!";
 NSString* const kMenuEngagedString = @"Bog is engaged";
 NSString* const kMenuFreeString = @"Bog is free";
 
-// Launch at login NSUserDefaults key.
-NSString* const kLaunchAtLoginUserDefaults = @"kLaunchAtLoginUserDefaults";
+// Set the default for app login item NSUserDefaults key.
+NSString* const kSetDefaultLoginItemUserDefaults = @"kSetDefaultLoginItemUserDefaults";
 
 // Use colour icon NSUserDefaults key.
 NSString* const kUseColourIconUserDefaults = @"kUseColourIconUserDefaults";

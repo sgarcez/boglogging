@@ -15,20 +15,8 @@
 @synthesize fetchTimer, urlConnection, urlData;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
-	[GrowlApplicationBridge setGrowlDelegate:self];
-
-	/*
-	NSBundle *myBundle = [NSBundle bundleForClass:[AppDelegate class]];
-	NSString *growlPath = [[myBundle privateFrameworksPath] stringByAppendingPathComponent:@"Growl-WithInstaller.framework"];
-	NSBundle *growlBundle = [NSBundle bundleWithPath:growlPath];
-	if (growlBundle && [growlBundle load])
-		[GrowlApplicationBridge setGrowlDelegate:self];
-	else
-		NSLog(@"ERROR: Could not load Growl.framework");
-	*/
 	
-	
-	// Check out user defaults for missing or inconsistencies.
+	// Check our user defaults for missing or inconsistencies.
 	[self checkUserDefaults];
 
 	// Setup the drop down menu.
@@ -52,6 +40,9 @@
 	self.urlData = [[[NSMutableData alloc] init] autorelease];
 	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
 	
+	// Set up Growl.
+	[GrowlApplicationBridge setGrowlDelegate:self];
+		
 	// Register for system sleep/wake notifications.
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceDidWakeNotification:) name:NSWorkspaceDidWakeNotification object:nil];
@@ -78,6 +69,17 @@
 #pragma mark IBActions
 
 - (void)openSettings:(id)sender {	
+	
+	/*
+	// Launch Growl in the System Preferences.
+	if ([GrowlApplicationBridge isGrowlInstalled]) {
+		NSString *scriptStr = @"tell application \"System Preferences\"\n activate\n set current pane to pane \"com.growl.prefpanel\"\n end tell";
+		NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:scriptStr] autorelease];
+		NSDictionary *errInfo;
+		NSAppleEventDescriptor *res = [script executeAndReturnError:&errInfo];
+	}
+	*/
+	
 	if (![NSApp isActive]) {
 		[NSApp activateIgnoringOtherApps:YES];
 	}
@@ -247,7 +249,7 @@
 	else if ([parseError code] == -404)
 		NSLog(@"Server response was not 2**");
 	else
-		NSLog(@"%@", parseError);
+		NSLog(@"connectionError %@", parseError);
 }
 
 @end

@@ -15,7 +15,19 @@
 @synthesize fetchTimer, urlConnection, urlData;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
+	[GrowlApplicationBridge setGrowlDelegate:self];
 
+	/*
+	NSBundle *myBundle = [NSBundle bundleForClass:[AppDelegate class]];
+	NSString *growlPath = [[myBundle privateFrameworksPath] stringByAppendingPathComponent:@"Growl-WithInstaller.framework"];
+	NSBundle *growlBundle = [NSBundle bundleWithPath:growlPath];
+	if (growlBundle && [growlBundle load])
+		[GrowlApplicationBridge setGrowlDelegate:self];
+	else
+		NSLog(@"ERROR: Could not load Growl.framework");
+	*/
+	
+	
 	// Check out user defaults for missing or inconsistencies.
 	[self checkUserDefaults];
 
@@ -65,7 +77,7 @@
 #pragma mark -
 #pragma mark IBActions
 
-- (void)openSettings:(id)sender {
+- (void)openSettings:(id)sender {	
 	if (![NSApp isActive]) {
 		[NSApp activateIgnoringOtherApps:YES];
 	}
@@ -196,7 +208,13 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	connectionError = 0;
 	NSString *responseString = [[NSString alloc] initWithCString:[self.urlData bytes] encoding:NSUTF8StringEncoding];
-	engaged = [responseString boolValue];
+	if (engaged != [responseString boolValue]) {
+		engaged = [responseString boolValue];
+		if (engaged)
+			[GrowlApplicationBridge notifyWithTitle:@"Bog Logging" description:@"Bog is engaged" notificationName:@"Bog is engaged" iconData:nil priority:0 isSticky:NO clickContext:nil];
+		else
+			[GrowlApplicationBridge notifyWithTitle:@"Bog Logging" description:@"Bog is free" notificationName:@"Bog is free" iconData:nil priority:0 isSticky:NO clickContext:nil];
+	}
 	[responseString release];
 	[self updateMenu];
 	[self killConnection];

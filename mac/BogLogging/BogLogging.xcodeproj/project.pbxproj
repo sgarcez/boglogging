@@ -10,6 +10,9 @@
 		1A4FE5771295B76B00B7C96D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FE5761295B76B00B7C96D /* icon.icns */; };
 		1A525E581293F8DD009E01CE /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A525E571293F8DD009E01CE /* Constants.m */; };
 		1A525E8F1293FCA4009E01CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A525E8E1293FCA4009E01CE /* SystemConfiguration.framework */; };
+		1AB7A89F12AB1ABA00243AEF /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 1AB7A89E12AB1ABA00243AEF /* Growl Registration Ticket.growlRegDict */; };
+		1AB7A8F212AB1DA100243AEF /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB7A8F112AB1DA100243AEF /* Growl-WithInstaller.framework */; };
+		1AB7A8FA12AB1DB200243AEF /* Growl-WithInstaller.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AB7A8F112AB1DA100243AEF /* Growl-WithInstaller.framework */; };
 		1ABAD5171295EA6A00C2D797 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABAD5161295EA6A00C2D797 /* Security.framework */; };
 		1ABAD5B81295F66F00C2D797 /* status-black-engadged.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B21295F66F00C2D797 /* status-black-engadged.png */; };
 		1ABAD5B91295F66F00C2D797 /* status-black-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAD5B31295F66F00C2D797 /* status-black-error.png */; };
@@ -35,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1AB7A8FA12AB1DB200243AEF /* Growl-WithInstaller.framework in CopyFiles */,
 				1AC9A64F129D670800F95767 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +53,8 @@
 		1A525E561293F8DD009E01CE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
 		1A525E571293F8DD009E01CE /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Classes/Constants.m; sourceTree = "<group>"; };
 		1A525E8E1293FCA4009E01CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1AB7A89E12AB1ABA00243AEF /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		1AB7A8F112AB1DA100243AEF /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
 		1ABAD5161295EA6A00C2D797 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1ABAD5B21295F66F00C2D797 /* status-black-engadged.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-black-engadged.png"; sourceTree = "<group>"; };
 		1ABAD5B31295F66F00C2D797 /* status-black-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-black-error.png"; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 				1A525E8F1293FCA4009E01CE /* SystemConfiguration.framework in Frameworks */,
 				1ABAD5171295EA6A00C2D797 /* Security.framework in Frameworks */,
 				1AC9A642129D66BD00F95767 /* Sparkle.framework in Frameworks */,
+				1AB7A8F212AB1DA100243AEF /* Growl-WithInstaller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +109,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AB7A8F112AB1DA100243AEF /* Growl-WithInstaller.framework */,
 				1AC9A641129D66BD00F95767 /* Sparkle.framework */,
 				1ABAD5161295EA6A00C2D797 /* Security.framework */,
 				1A525E8E1293FCA4009E01CE /* SystemConfiguration.framework */,
@@ -167,6 +175,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1AB7A89E12AB1ABA00243AEF /* Growl Registration Ticket.growlRegDict */,
 				1AD3408412A588F20011962A /* dsa_pub.pem */,
 				8D1107310486CEB800E47090 /* BogLogging-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -245,6 +254,7 @@
 				1ABAD5BC1295F66F00C2D797 /* status-colour-error.png in Resources */,
 				1ABAD5BD1295F66F00C2D797 /* status-colour-free.png in Resources */,
 				1AD3408512A588F20011962A /* dsa_pub.pem in Resources */,
+				1AB7A89F12AB1ABA00243AEF /* Growl Registration Ticket.growlRegDict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +356,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};

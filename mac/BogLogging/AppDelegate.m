@@ -36,16 +36,16 @@
 	[self.statusItem setHighlightMode:YES];
 	[self.statusItem setMenu:self.menu];
 	
-	// The fetch connection preparation.
-	self.urlData = [[[NSMutableData alloc] init] autorelease];
-	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
-	
 	// Set up Growl.
 	[GrowlApplicationBridge setGrowlDelegate:self];
 		
 	// Register for system sleep/wake notifications.
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceDidWakeNotification:) name:NSWorkspaceDidWakeNotification object:nil];
+	
+	// The fetch connection preparation.
+	self.urlData = [[[NSMutableData alloc] init] autorelease];
+	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];	
 }
 
 - (void)dealloc {
@@ -127,14 +127,17 @@
 
 - (void)workspaceWillSleepNotification:(NSNotification *)notification {
 	NSLog(@"workspaceWillSleepNotification");
+	
 	[self.fetchTimer invalidate];
-	self.fetchTimer = nil;
-	self.urlConnection = nil;
-	self.urlData = nil;
 }
 
 - (void)workspaceDidWakeNotification:(NSNotification *)notification {
 	NSLog(@"workspaceDidWakeNotification");
+	
+	self.urlConnection = nil;
+	self.urlData = nil;
+	self.fetchTimer = nil;
+	
 	self.urlData = [[[NSMutableData alloc] init] autorelease];
 	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];	
 }

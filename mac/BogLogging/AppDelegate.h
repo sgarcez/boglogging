@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Growl-WithInstaller/Growl.h>
+#import <Growl/Growl.h>
 
 @interface AppDelegate : NSObject <GrowlApplicationBridgeDelegate> {
 	NSWindow *window;

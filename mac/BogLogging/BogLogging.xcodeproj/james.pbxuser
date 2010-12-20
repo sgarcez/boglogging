@@ -8,6 +8,27 @@
 			sepNavWindowFrame = "{{15, 194}, {1252, 979}}";
 		};
 	};
+	1A2FD3CC12ACE9680088C4D6 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* BogLogging-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/james/Documents/Daggers/boglogging/git/mac/BogLogging/BogLogging-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	1A2FD3CD12ACE9680088C4D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A525E561293F8DD009E01CE /* Constants.h */;
+		name = "Constants.h: 18";
+		rLen = 0;
+		rLoc = 360;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
 	1A3B2BB212A6D5ED00A1A567 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 1A4FE5761295B76B00B7C96D /* icon.icns */;
@@ -60,7 +81,7 @@
 	};
 	1A525E561293F8DD009E01CE /* Constants.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 710}}";
+			sepNavIntBoundsRect = "{{0, 0}, {954, 1231}}";
 			sepNavSelRange = "{360, 0}";
 			sepNavVisRange = "{0, 566}";
 		};
@@ -102,31 +123,25 @@
 		vrLen = 265;
 		vrLoc = 0;
 	};
-	1AB5682812AB08AD000585AA /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* BogLogging-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			LSUIElement,
-		);
-		name = "/Users/James/Documents/Freelance/GIT/boglogging/git/mac/BogLogging/BogLogging-Info.plist";
+	1AA0A62012BF64E3001C5E72 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */;
+		name = "AppDelegate.m: 52";
 		rLen = 0;
-		rLoc = 2147483647;
+		rLoc = 2238;
+		rType = 0;
+		vrLen = 3427;
+		vrLoc = 0;
 	};
-	1AB5688A12AB0D60000585AA /* GrowlApplicationBridge-Carbon.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = "GrowlApplicationBridge-Carbon.h";
-		path = "/Users/James/Documents/Freelance/GIT/boglogging/git/mac/BogLogging/Growl-WithInstaller.framework/Headers/GrowlApplicationBridge-Carbon.h";
-		sourceTree = "<absolute>";
-	};
-	1AB5688C12AB0D60000585AA /* Growl.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Growl.h;
-		path = "/Users/James/Documents/Freelance/GIT/boglogging/git/mac/BogLogging/Growl-WithInstaller.framework/Headers/Growl.h";
-		sourceTree = "<absolute>";
+	1AA0A62212BF64E3001C5E72 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */;
+		name = "AppDelegate.m: 26";
+		rLen = 0;
+		rLoc = 881;
+		rType = 0;
+		vrLen = 3427;
+		vrLoc = 0;
 	};
 	1AB7A89E12AB1ABA00243AEF /* Growl Registration Ticket.growlRegDict */ = {
 		uiCtxt = {
@@ -155,73 +170,9 @@
 		vrLen = 1178;
 		vrLoc = 0;
 	};
-	1AB7A93812AB20D200243AEF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1AB5688C12AB0D60000585AA /* Growl.h */;
-		name = "Growl.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 130;
-		vrLoc = 0;
-	};
-	1AB7A93912AB20D200243AEF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1AB5688A12AB0D60000585AA /* GrowlApplicationBridge-Carbon.h */;
-		name = "GrowlApplicationBridge-Carbon.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 2312;
-		vrLoc = 31249;
-	};
-	1AB7A93A12AB20D200243AEF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1AB7A93B12AB20D200243AEF /* GrowlApplicationBridge.h */;
-		name = "GrowlApplicationBridge.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1746;
-		vrLoc = 0;
-	};
-	1AB7A93B12AB20D200243AEF /* GrowlApplicationBridge.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = GrowlApplicationBridge.h;
-		path = "/Users/James/Documents/Freelance/GIT/boglogging/git/mac/BogLogging/Growl-WithInstaller.framework/Headers/GrowlApplicationBridge.h";
-		sourceTree = "<absolute>";
-	};
-	1AB7A93C12AB20D200243AEF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1AB7A93D12AB20D200243AEF /* GrowlDefines.h */;
-		name = "GrowlDefines.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 2556;
-		vrLoc = 13177;
-	};
-	1AB7A93D12AB20D200243AEF /* GrowlDefines.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = GrowlDefines.h;
-		path = "/Users/James/Documents/Freelance/GIT/boglogging/git/mac/BogLogging/Growl-WithInstaller.framework/Headers/GrowlDefines.h";
-		sourceTree = "<absolute>";
-	};
 	1ABAD5C71295F6C000C2D797 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 1ABAD5B21295F66F00C2D797 /* status-black-engadged.png */;
-	};
-	1ABCD9F612ABB7B500B551DC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1A525E561293F8DD009E01CE /* Constants.h */;
-		name = "Constants.h: 18";
-		rLen = 0;
-		rLoc = 360;
-		rType = 0;
-		vrLen = 566;
-		vrLoc = 0;
 	};
 	1ABCD9F712ABB7B500B551DC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -274,49 +225,28 @@
 		vrLen = 2770;
 		vrLoc = 0;
 	};
-	1AF5BF8112AC2F32008E004D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */;
-		name = "AppDelegate.m: 19";
-		rLen = 0;
-		rLoc = 482;
-		rType = 0;
-		vrLen = 1907;
-		vrLoc = 7529;
-	};
-	1AF5BF8212AC2F32008E004D /* PBXTextBookmark */ = {
+	1AEC248212AFD0480034FEF9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D80F4B6AC300CF3369 /* AppDelegate.h */;
-		name = "AppDelegate.h: 12";
+		name = "AppDelegate.h: 15";
 		rLen = 0;
-		rLoc = 270;
+		rLoc = 320;
 		rType = 0;
-		vrLen = 1487;
+		vrLen = 1473;
 		vrLoc = 0;
-	};
-	1AF5BF8312AC2F32008E004D /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* BogLogging-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/James/Documents/Freelance/GIT/boglogging/git/mac/BogLogging/BogLogging-Info.plist";
-		rLen = 0;
-		rLoc = 2147483647;
 	};
 	256AC3D80F4B6AC300CF3369 /* AppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 710}}";
-			sepNavSelRange = "{270, 0}";
-			sepNavVisRange = "{0, 1487}";
+			sepNavIntBoundsRect = "{{0, 0}, {954, 1231}}";
+			sepNavSelRange = "{320, 0}";
+			sepNavVisRange = "{0, 1473}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1314, 3328}}";
-			sepNavSelRange = "{482, 0}";
-			sepNavVisRange = "{7529, 1907}";
+			sepNavIntBoundsRect = "{{0, 0}, {1432, 3367}}";
+			sepNavSelRange = "{881, 0}";
+			sepNavVisRange = "{0, 3427}";
 		};
 	};
 	256AC3F00F4B6AF500CF3369 /* BogLogging_Prefix.pch */ = {
@@ -327,7 +257,8 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeArchitecturePreference = x86_64;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 1A525D4D1293E886009E01CE /* BogLogging */;
 		activeTarget = 8D1107260486CEB800E47090 /* BogLogging */;
 		addToTargets = (
@@ -345,7 +276,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					856,
+					1254,
 					20,
 					48,
 					43,
@@ -367,7 +298,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					816,
+					736,
 					60,
 					20,
 					48,
@@ -384,29 +315,25 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 313273315;
-			PBXWorkspaceStateSaveDate = 313273315;
+			PBXPerProjectTemplateStateSaveDate = 314532943;
+			PBXWorkspaceStateSaveDate = 314532943;
 		};
 		perUserProjectItems = {
+			1A2FD3CC12ACE9680088C4D6 /* PlistBookmark */ = 1A2FD3CC12ACE9680088C4D6 /* PlistBookmark */;
+			1A2FD3CD12ACE9680088C4D6 /* PBXTextBookmark */ = 1A2FD3CD12ACE9680088C4D6 /* PBXTextBookmark */;
 			1A3B2BB212A6D5ED00A1A567 /* PBXBookmark */ = 1A3B2BB212A6D5ED00A1A567 /* PBXBookmark */;
 			1A525EEF129409A7009E01CE /* PBXTextBookmark */ = 1A525EEF129409A7009E01CE /* PBXTextBookmark */;
 			1A525EF0129409A7009E01CE /* PBXTextBookmark */ = 1A525EF0129409A7009E01CE /* PBXTextBookmark */;
 			1A9FB75012A7B665008863DA /* PBXTextBookmark */ = 1A9FB75012A7B665008863DA /* PBXTextBookmark */;
-			1AB5682812AB08AD000585AA /* PlistBookmark */ = 1AB5682812AB08AD000585AA /* PlistBookmark */;
+			1AA0A62012BF64E3001C5E72 /* PBXTextBookmark */ = 1AA0A62012BF64E3001C5E72 /* PBXTextBookmark */;
+			1AA0A62212BF64E3001C5E72 /* PBXTextBookmark */ = 1AA0A62212BF64E3001C5E72 /* PBXTextBookmark */;
 			1AB7A90412AB1E1A00243AEF /* PBXTextBookmark */ = 1AB7A90412AB1E1A00243AEF /* PBXTextBookmark */;
 			1AB7A92212AB1F7E00243AEF /* PBXTextBookmark */ = 1AB7A92212AB1F7E00243AEF /* PBXTextBookmark */;
-			1AB7A93812AB20D200243AEF /* PBXTextBookmark */ = 1AB7A93812AB20D200243AEF /* PBXTextBookmark */;
-			1AB7A93912AB20D200243AEF /* PBXTextBookmark */ = 1AB7A93912AB20D200243AEF /* PBXTextBookmark */;
-			1AB7A93A12AB20D200243AEF /* PBXTextBookmark */ = 1AB7A93A12AB20D200243AEF /* PBXTextBookmark */;
-			1AB7A93C12AB20D200243AEF /* PBXTextBookmark */ = 1AB7A93C12AB20D200243AEF /* PBXTextBookmark */;
 			1ABAD5C71295F6C000C2D797 /* PBXBookmark */ = 1ABAD5C71295F6C000C2D797 /* PBXBookmark */;
-			1ABCD9F612ABB7B500B551DC /* PBXTextBookmark */ = 1ABCD9F612ABB7B500B551DC /* PBXTextBookmark */;
 			1ABCD9F712ABB7B500B551DC /* PBXTextBookmark */ = 1ABCD9F712ABB7B500B551DC /* PBXTextBookmark */;
 			1ABCD9F812ABB7B500B551DC /* PBXTextBookmark */ = 1ABCD9F812ABB7B500B551DC /* PBXTextBookmark */;
 			1AD340AE12A5913B0011962A /* PBXTextBookmark */ = 1AD340AE12A5913B0011962A /* PBXTextBookmark */;
-			1AF5BF8112AC2F32008E004D /* PBXTextBookmark */ = 1AF5BF8112AC2F32008E004D /* PBXTextBookmark */;
-			1AF5BF8212AC2F32008E004D /* PBXTextBookmark */ = 1AF5BF8212AC2F32008E004D /* PBXTextBookmark */;
-			1AF5BF8312AC2F32008E004D /* PlistBookmark */ = 1AF5BF8312AC2F32008E004D /* PlistBookmark */;
+			1AEC248212AFD0480034FEF9 /* PBXTextBookmark */ = 1AEC248212AFD0480034FEF9 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1A525D5B1293E8B3009E01CE /* Source Control */;
 		userBuildSettings = {

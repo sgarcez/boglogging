@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Growl Registration Ticket.growlRegDict
+   BogLogging
+
+   Created by James Beith on 05/12/2010.
+   Copyright 2010 James Beith. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+		<key>TicketVersion</key>
+		<integer>1</integer>
+		<key>AllNotifications</key>
+		<array>
+			<string>Bog is free</string>
+			<string>Bog is engaged</string>
+		</array>
+		<key>DefaultNotifications</key>
+		<array>
+			<string>Bog is free</string>
+			<string>Bog is engaged</string>
+		</array>
+    </dict>
+</plist>

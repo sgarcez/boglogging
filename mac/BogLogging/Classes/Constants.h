@@ -13,8 +13,8 @@ extern NSString* const kStateURLString;
 
 // Strings for the menus.
 extern NSString* const kMenuErrorString;
-extern NSString* const kMenuEngagedString;
 extern NSString* const kMenuFreeString;
+extern NSString* const kMenuEngagedString;
 
 // Set the default for app login item NSUserDefaults key.
 extern NSString* const kSetDefaultLoginItemUserDefaults;

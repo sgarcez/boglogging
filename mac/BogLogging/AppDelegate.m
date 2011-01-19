@@ -15,8 +15,8 @@
 @synthesize fetchTimer, urlConnection, urlData;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {	
-
-	// Check out user defaults for missing or inconsistencies.
+	
+	// Check our user defaults for missing or inconsistencies.
 	[self checkUserDefaults];
 
 	// Setup the drop down menu.
@@ -36,13 +36,16 @@
 	[self.statusItem setHighlightMode:YES];
 	[self.statusItem setMenu:self.menu];
 	
-	// The fetch connection preparation.
-	self.urlData = [[[NSMutableData alloc] init] autorelease];
-	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];
-	
+	// Set up Growl.
+	[GrowlApplicationBridge setGrowlDelegate:self];
+		
 	// Register for system sleep/wake notifications.
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:nil];
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(workspaceDidWakeNotification:) name:NSWorkspaceDidWakeNotification object:nil];
+	
+	// The fetch connection preparation.
+	self.urlData = [[[NSMutableData alloc] init] autorelease];
+	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];	
 }
 
 - (void)dealloc {
@@ -65,7 +68,18 @@
 #pragma mark -
 #pragma mark IBActions
 
-- (void)openSettings:(id)sender {
+- (void)openSettings:(id)sender {	
+	
+	/*
+	// Launch Growl in the System Preferences.
+	if ([GrowlApplicationBridge isGrowlInstalled]) {
+		NSString *scriptStr = @"tell application \"System Preferences\"\n activate\n set current pane to pane \"com.growl.prefpanel\"\n end tell";
+		NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:scriptStr] autorelease];
+		NSDictionary *errInfo;
+		NSAppleEventDescriptor *res = [script executeAndReturnError:&errInfo];
+	}
+	*/
+	
 	if (![NSApp isActive]) {
 		[NSApp activateIgnoringOtherApps:YES];
 	}
@@ -113,14 +127,17 @@
 
 - (void)workspaceWillSleepNotification:(NSNotification *)notification {
 	NSLog(@"workspaceWillSleepNotification");
+	
 	[self.fetchTimer invalidate];
-	self.fetchTimer = nil;
-	self.urlConnection = nil;
-	self.urlData = nil;
 }
 
 - (void)workspaceDidWakeNotification:(NSNotification *)notification {
 	NSLog(@"workspaceDidWakeNotification");
+	
+	self.urlConnection = nil;
+	self.urlData = nil;
+	self.fetchTimer = nil;
+	
 	self.urlData = [[[NSMutableData alloc] init] autorelease];
 	self.fetchTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(startConnection) userInfo:nil repeats:YES];	
 }
@@ -196,7 +213,13 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	connectionError = 0;
 	NSString *responseString = [[NSString alloc] initWithCString:[self.urlData bytes] encoding:NSUTF8StringEncoding];
-	engaged = [responseString boolValue];
+	if (engaged != [responseString boolValue]) {
+		engaged = [responseString boolValue];
+		if (engaged)
+			[GrowlApplicationBridge notifyWithTitle:@"Bog Logging" description:@"Bog is engaged" notificationName:@"Bog is engaged" iconData:nil priority:0 isSticky:NO clickContext:nil];
+		else
+			[GrowlApplicationBridge notifyWithTitle:@"Bog Logging" description:@"Bog is free" notificationName:@"Bog is free" iconData:nil priority:0 isSticky:NO clickContext:nil];
+	}
 	[responseString release];
 	[self updateMenu];
 	[self killConnection];
@@ -229,7 +252,7 @@
 	else if ([parseError code] == -404)
 		NSLog(@"Server response was not 2**");
 	else
-		NSLog(@"%@", parseError);
+		NSLog(@"connectionError %@", parseError);
 }
 
 @end

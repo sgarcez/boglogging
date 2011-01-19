@@ -13,8 +13,8 @@ NSString* const kStateURLString = @"http://boglogging.com/api/state/";
 
 // Strings for the menus.
 NSString* const kMenuErrorString = @"Bog connection error!";
-NSString* const kMenuEngagedString = @"Bog is engaged";
 NSString* const kMenuFreeString = @"Bog is free";
+NSString* const kMenuEngagedString = @"Bog is engaged";
 
 // Set the default for app login item NSUserDefaults key.
 NSString* const kSetDefaultLoginItemUserDefaults = @"kSetDefaultLoginItemUserDefaults";

@@ -2,4 +2,4 @@
 SELECT start_time, TIMEDIFF(end_time, start_time) AS 'length'
 FROM session
 WHERE start_time LIKE '2010-11-23%'
-ORDER BY 'length' DESC;
+ORDER BY length DESC;

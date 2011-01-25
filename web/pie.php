@@ -2,7 +2,7 @@
 
 ini_set("error_reporting","E_ALL");
 
-require('api/db.live.php');
+require('api/db.live_remote.php');
 
 date_default_timezone_set('Europe/London');
 
@@ -11,14 +11,14 @@ date_default_timezone_set('Europe/London');
 		$to  = date("Y.m.d H-i-s", mktime(23, 59, 59, date("m"), date("d"), date("Y")));
 
 		$sql = sprintf( 
-			"SELECT * FROM boglog.session 
+			"SELECT * FROM session 
 			WHERE start_time >= '%s' 
 			AND start_time <='%s'",
 				mysql_real_escape_string($from),
 				mysql_real_escape_string($to));
 				
 		$query = mysql_query($sql);
-		
+		//echo $query;
 		$oneorless = 0;
 		$twoorless = 0;
 		$fiveorless = 0;

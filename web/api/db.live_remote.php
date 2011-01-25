@@ -1,5 +1,5 @@
 <?php
-$host = "localhost"; //database location
+$host = "184.106.156.81"; //database location
 $user = "boglogging"; //database username
 $pass = "Uranus666"; //database password
 $db_name = "boglogging"; //database name
